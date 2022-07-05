@@ -44,4 +44,5 @@ Right Click/View Image too see in 2K
 
 ## License
 
-CC0 1.0 Universal (see [LICENSE](LICENSE))
+Follow source materials:
+https://github.com/StudioPetrikas/FreeCADLink_VertUI and https://github.com/turn211/ProDarkThemePreferencePack
