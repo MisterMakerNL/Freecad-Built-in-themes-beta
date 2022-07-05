@@ -1981,7 +1981,7 @@ QTreeView::indicator:indeterminate {
 }
 QTreeView {
     background-color: transparent;
-    selection-background-color: green; /* Used on Mac */
+    selection-background-color: #557BB6; /* Used on Mac */
     selection-color: white; /* Used on Mac */
     show-decoration-selected: 1;
 }
