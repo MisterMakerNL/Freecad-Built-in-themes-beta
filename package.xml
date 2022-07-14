@@ -3,9 +3,9 @@
   <name>ExtremeProDark</name>
   <description>A preference pack including a stylesheet and an overlay setting for Linkstage for a Dark mode.</description>
   <version>1.0.0</version>
-  <maintainer email=https://github.com/MisterMakerNL"">Chris Hennes</maintainer>
+  <maintainer email="https://github.com/MisterMakerNL"">Mistermaker</maintainer>
   <license file="LICENSE">GPLv3</license>
-  <url type="repository" branch="main">https://github.com/chennes/DarkSideThemePackage</url>
+  <url type="repository" branch="main">https://github.com/MisterMakerNL/ExtremeProDark</url>
   <icon>resources/icons/ExtremeProDark.svg</icon>
 
   <content>
