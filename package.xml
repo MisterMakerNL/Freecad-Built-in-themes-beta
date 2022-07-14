@@ -3,7 +3,7 @@
 	<name>ExtremeProDark</name>
 	<description>A preference pack including a stylesheet and an overlay setting for Linkstage for a Dark mode.</description>
 	<version>1.0.0</version>
-	<maintainer email="https://github.com/MisterMakerNL">Mistermaker</maintainer>
+	<maintainer email="nomail@freecad.org">Mistermaker</maintainer>
 	<license file="LICENSE">GPLv3</license>
 	<url type="repository" branch="main">https://github.com/MisterMakerNL/ExtremeProDark</url>
 	<icon>resources/icons/ExtremeProDark.svg</icon>
@@ -11,7 +11,7 @@
 <content>
     	<preferencepack>
       		<name>ExtremeProDark</name>
-      		<description>Dark mode color scheme with Linkstage overlay stylesheet, It is designed to optimize screenspace.</description>
+      		<description>Dark mode color scheme with Linkstage overlay stylesheet, It is designed to optimize screenspace. For any issues please visit the Github.</description>
       		<tag>blue</tag>
       		<tag>stylesheet</tag>
       		<tag>dark</tag>
