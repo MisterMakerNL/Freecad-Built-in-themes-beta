@@ -1,7 +1,8 @@
 # ExtremeProDark
 Optimized version of the ProDark preference pack.
 
-![afbeelding](https://user-images.githubusercontent.com/29804962/173820234-755dc378-4168-4168-aac4-0399fb048cc7.png)
+![afbeelding](https://user-images.githubusercontent.com/29804962/179058807-adf84a5a-39fd-48d9-919e-1c6b32eb4399.png)
+
 
 ## Installation
 
