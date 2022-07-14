@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
-  <name>ExtremeProDark</name>
-  <description>A preference pack including a stylesheet and an overlay setting for Linkstage for a Dark mode.</description>
-  <version>1.0.0</version>
-  <maintainer email="https://github.com/MisterMakerNL">Mistermaker</maintainer>
-  <license file="LICENSE">GPLv3</license>
-  <url type="repository" branch="main">https://github.com/MisterMakerNL/ExtremeProDark</url>
-  <icon>resources/icons/ExtremeProDark.svg</icon>
+	<name>ExtremeProDark</name>
+	<description>A preference pack including a stylesheet and an overlay setting for Linkstage for a Dark mode.</description>
+	<version>1.0.0</version>
+	<maintainer email="https://github.com/MisterMakerNL">Mistermaker</maintainer>
+	<license file="LICENSE">GPLv3</license>
+	<url type="repository" branch="main">https://github.com/MisterMakerNL/ExtremeProDark</url>
+	<icon>resources/icons/ExtremeProDark.svg</icon>
 
-  <content>
-    <preferencepack>
-      <name>ExtremeProDark</name>
-      <description>Dark mode color scheme with Linkstage overlay stylesheet, It is designed to optimize screenspace.</description>
-      <tag>blue</tag>
-      <tag>stylesheet</tag>
-      <tag>dark</tag>
-	    <tag>Linkstage</tag>
-	    <tag>overlay</tag>
-      <file>ExtremeProDark.qss</file>
-    </preferencepack>
-  </content>
+<content>
+    	<preferencepack>
+      		<name>ExtremeProDark</name>
+      		<description>Dark mode color scheme with Linkstage overlay stylesheet, It is designed to optimize screenspace.</description>
+      		<tag>blue</tag>
+      		<tag>stylesheet</tag>
+      		<tag>dark</tag>
+		<tag>Linkstage</tag>
+		<tag>overlay</tag>
+     		<file>ExtremeProDark.qss</file>
+     		<file>overlay/ExtremeProDarkOverlay.qss</file>
+	</preferencepack>
+</content>
 
 </package>
