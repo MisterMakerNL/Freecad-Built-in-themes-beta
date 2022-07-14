@@ -1,5 +1,8 @@
 # ExtremeProDark
 Optimized version of the ProDark preference pack.
+
+![afbeelding](https://user-images.githubusercontent.com/29804962/173820234-755dc378-4168-4168-aac4-0399fb048cc7.png)
+
 ## Installation
 
 ### Automatic
@@ -41,4 +44,5 @@ Right Click/View Image too see in 2K
 
 ## License
 
-CC0 1.0 Universal (see [LICENSE](LICENSE))
+Follow source materials:
+https://github.com/StudioPetrikas/FreeCADLink_VertUI and https://github.com/turn211/ProDarkThemePreferencePack

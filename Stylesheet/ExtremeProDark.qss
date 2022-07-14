@@ -1,21 +1,20 @@
 /*
 ABOUT
 ============================================================================================================
-ProDark
-A Professional Dark Mode FreeCAD Theme by Thomas Plank aka turn211
-based on the stock theme from FreeCAD by Pablo Gil Fernández
+ExtremeProDark
+A Professional Dark Mode FreeCAD Theme by MisterMaker modded from
+https://github.com/StudioPetrikas/FreeCADLink_VertUI and https://github.com/turn211/ProDarkThemePreferencePack
 
 KNOWN BUGS and TO DO
 ============================================================================================================
 Please, follow the link to get updated information: 
-https://forum.freecadweb.org/viewtopic.php?f=34&t=55134&sid=0466734fc3349eccd8921eb356f70ad7
+https://forum.freecadweb.org/viewtopic.php?f=34&t=68973
 
 LICENSE
 ============================================================================================================
-Copyright (c) 2019 Pablo Gil Fernández
-
-This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
-To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
+Probably follow the source copyrights as mentioned above. 
+For me I really don't care, do what you want with it.
+aka no license.
 
 INSTALLATION
 ============================================================================================================
@@ -25,34 +24,7 @@ INSTALLATION
     LINUX = /home/[YOUR_USER_NAME]/.FreeCAD/Gui/Stylesheets/
 
 ============================================================================================================ 
-THESE COLOURS WERE USED AS TEMP SCRATCHPAD FOR DESIGNING. PLEASE DISREGARD!
- 
-    BACKGROUND (darker to lighter)
-        black
-        #1e1e1e
-        #2a2a2a = background
-        #333333
-        #424242
-        #3c3c3c
-        #333333 = main background color
-        #3c3c3c = secondary
-        #a0a0a0
-        #b4b4b4
-        #bebebe
-        #c8c8c8
-        #d2d2d2
-        #e0e0e0
-        #f5f5f5
-        white
 
-    SELECTION (darker to lighter)
-        #557BB6
-        #696969
-        #3874f2
-        #557BB6 = main selection color
-        #557BB6 = used to build QSpinBox up and down buttons, it's used as color in the middle
-        #adc5ed
-        #cbd8e6
 */
 
 
@@ -162,6 +134,13 @@ QMenuBar,
 QMenuBar::item {
     color: #ffffff;
     background-color: #2b2b2b; /* top menu main background color */
+}
+
+QMenu::icon:checked { /* appearance of a 'checked' icon */
+    background: #6492d7;
+    border: 2px #6492d7;
+    position: absolute;
+    border-radius: 3px;
 }
 
 QMenu,
@@ -2009,7 +1988,7 @@ QTreeView::indicator:indeterminate {
 }
 QTreeView {
     background-color: transparent;
-    selection-background-color: green; /* Used on Mac */
+    selection-background-color: #557BB6; /* Used on Mac */
     selection-color: white; /* Used on Mac */
     show-decoration-selected: 1;
 }
