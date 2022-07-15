@@ -12,7 +12,7 @@ Refer to [the FreeCAD wiki](https://wiki.freecadweb.org/Preference_Packs#Distrib
 
 1. Install the PreferencePack either using the [Addon manager](https://wiki.freecadweb.org/Std_AddonMgr) inside FreeCAD or [manually](https://wiki.freecadweb.org/Preference_Packs#Distributing_a_pack).
 
-2. Activate the pack via Preferences -> General -> Preference packs -> Dracula -> Apply
+2. Activate the pack via Preferences -> General -> Preference packs -> ExtremeProDark -> Apply
 
 3. Boom! It's working
 
