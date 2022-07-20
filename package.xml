@@ -2,7 +2,7 @@
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
  <name>ExtremeProDark</name>
  <description>This preference pack is optimized for screenspace, it looks a lot like Freecad without theme but in darkmode. It also has the Linkstage overlay settings, if you are using linkstage.</description>
- <version>1.0.3</version>
+ <version>1.0.4</version>
  <maintainer email="nomail@freecad.org">Mistermaker</maintainer>
  <license file="LICENSE">GPLv3</license>
  <url type="repository" branch="main">https://github.com/MisterMakerNL/ExtremeProDark</url>
