@@ -302,7 +302,7 @@ QToolTip {
     background-color: #2a2a2a;
     /*opacity: 90%; doesn't correctly work */
     padding: 4px;
-    border-radius: 1px; /* has no effect */
+    border-radius: 3px; /* has no effect */
 }
 
 
@@ -314,6 +314,7 @@ QDockWidget {
     titlebar-close-icon: url(qss:images_dark-light/close_light.svg);
     titlebar-normal-icon: url(qss:images_dark-light/undock_light.svg);
     background-color: #333333;
+		/*qproperty-features:"DockWidgetVerticalTitleBar";*/												
 }
 
 QDockWidget::title {
@@ -365,7 +366,7 @@ Progress bar
 QProgressBar,
 QProgressBar:horizontal {
     color: white;
-    min-height: 24px;
+    min-height: 16px;
     background-color: rgba(0,0,0,70);
     text-align: center;
     border: 1px solid rgba(0,0,0,140);
@@ -511,9 +512,15 @@ QScrollBar::sub-page:vertical {
 Tab bar
 ==================================================================================================*/
 QTabWidget::pane {
-    background-color: transparent; /* temporal (transparent background) */ /* tab content background color */ /* was transparent. fixes no color undocked Combo View */
+    /*background-color: transparent; /* temporal (transparent background) */ /* tab content background color */ /* was transparent. fixes no color undocked Combo View */
+    border-top: 2px solid #C2C7CB;
     position: absolute;
+    top: -0.5em;
+
 }
+QTabWidget::tab-bar {
+    alignment: center;
+}	 
 
 QTabWidget::pane:top {
     top: -1px;
@@ -547,12 +554,15 @@ QTabWidget::tab-bar:right {
 
 QTabBar {
     qproperty-drawBase: 0; /* important */
-    background-color: transparent; /* Hack for Undocked white background - was transparent*/ 
+    alignment: center;
+    /*background-color: transparent; /* Hack for Undocked white background - was transparent*/ 
+    
 }
 
 /* Workaround for QTabBars created from docked QDockWidgets which don't draw the border if not set and reset as follows: */
 QTabBar {
     border-top: 1px solid #333333;  /* set color for all QTabBars */
+
 }
 QDockWidget QTabBar {
     border-color: transparent; /* set color for all QTabBars but ones created from QDockWidget */
@@ -563,9 +573,11 @@ QDialog QTabBar {
 /* end fix */
 
 QTabBar::tab {
-    background-color: #191919; /* was transparent */
-    border: 1px solid transparent;
+    background-color: #272727; /* was transparent */
+ 
     padding: 5px 5px;
+	alignment: center;
+    color: #aaaaaa;	  
 }
 
 QTabBar::tab:top,
@@ -588,28 +600,29 @@ QTabBar::tab:right {
 QTabBar::tab:selected {
     color: #f5f5f5;
     background-color: #333333; /* same as tab content background color */
-    border-color: #3C3C3C;
+    /*border-color: #000000;*/
+    padding: 5px 5px;					 
 }
 
 QTabBar::tab:top:selected {
     border-top: 4px solid #557BB6; /* selection color */
-    border-bottom-color: #333333; /* same as tab content background color */
-    border-radius: 3px;
+    /*border-bottom-color: #333333; /* same as tab content background color */
+    border-radius: 0px;
 }
 
 QTabBar::tab:bottom:selected {
     border-bottom: 4px solid #557BB6; /* selection color */
-    border-top-color: #333333; /* same as tab content background color */
+    /*border-top-color: #333333; /* same as tab content background color */
 }
 
 QTabBar::tab:right:selected {
     border-left: 4px solid #557BB6; /* selection color */
-    border-right-color: #333333; /* same as tab content background color */
+    /*border-right-color: #333333; /* same as tab content background color */
 }
 
 QTabBar::tab:left:selected {
     border-right: 4px solid #557BB6; /* selection color */
-    border-left-color: #333333; /* same as tab content background color */
+    /*border-left-color: #333333; /* same as tab content background color */
 }
 
 QTabBar::tab:!selected {
@@ -622,15 +635,15 @@ QTabBar::tab:!selected:hover {
 }
 
 QTabBar::tab:first:selected {
-    margin-left: 0; /* the first selected tab has nothing to overlap with on the left */
+    margin-left: 4; /* the first selected tab has nothing to overlap with on the left */
 }
 
 QTabBar::tab:last:selected {
-    margin-right: 0; /* the last selected tab has nothing to overlap with on the right */
+    margin-right: 4; /* the last selected tab has nothing to overlap with on the right */
 }
 
 QTabBar::tab:only-one {
-    margin: 0; /* if there is only one tab, we don't want overlapping margins */
+    margin: 4; /* if there is only one tab, we don't want overlapping margins */
 }
 
 /* hack to access Preference TabBar background */
@@ -775,6 +788,7 @@ QTableView {
     selection-background-color: #557BB6; /* should be similar to QListView::item selected background-color */
     show-decoration-selected: 1; /* make the selection span the entire width of the view */
     border-radius: 1px;
+
 }
 
 QListView::item:hover,
@@ -879,6 +893,7 @@ QTreeView > QWidget > QDateEdit:down-button,
 QTreeView > QWidget > QDateTimeEdit:down-button,
 QTreeView > QWidget > Gui--ColorButton {
     border-radius: 1px;
+
 }
 
 /* set focus colors to best viewing the editable fields */
@@ -974,6 +989,7 @@ QHeaderView::down-arrow:hover {
 Gui--PropertyEditor--PropertyEditor {
     qproperty-groupTextColor: #bebebe;
     qproperty-groupBackground: #2a2a2a;
+
 }
 
 
@@ -1061,6 +1077,7 @@ Text/Python editor (macros, etc...)
 ==================================================================================================*/
 QPlainTextEdit,
 QPlainTextEdit:focus {
+	color: #ffffff;	   
     background-color: #3c3c3c; /* Python Console */
     selection-color: #f5f5f5;
     selection-background-color: #557BB6;
@@ -1077,6 +1094,7 @@ Tasks panel (custom FreeCAD class)
 /* Action group */
 QFrame[class="panel"] {
     background-color: transparent; /* temporal (transparent background) */
+
 }
 
 QSint--ActionGroup {
@@ -1208,6 +1226,7 @@ QToolBar > Gui--WorkbenchComboBox  {
     min-width: 50px; /* it ensures the default value is correctly displayed */
     min-height: 16px; /* important to be a pair number in order to up/down buttons to be divisible by two (if not set could create a blank line in Ubuntu. Its downside is that it's needed to reset it (min-width: 0px) on following elements that can't have it such as fields inside QToolBar and inside QTreeView (Property editor) */
     padding: 1px 2px; /* temporal: could don't be compatible with elements inside Tree/List view */
+
 }
 
 QToolBar > Gui--WorkbenchComboBox:!editable { 
@@ -1236,6 +1255,7 @@ QTextEdit,
 QTimeEdit,
 QDateEdit,
 QDateTimeEdit {
+
     color: #f5f5f5;
     background-color: #494949;  /* lineedits and drop-downs */
     selection-color: #ffffff;
@@ -1260,6 +1280,7 @@ QDoubleSpinBox,
 QTimeEdit,
 QDateEdit,
 QDateTimeEdit {
+
     padding-right: 20px;
 }
 
@@ -1503,11 +1524,11 @@ Push button
 QPushButton {
     color: #e0e0e0;
     text-align: center;
-    background-color: #2a2a2a;
+    background-color: #545353;
     padding: 4px 20px;
-    border: 1px solid #494949;
+    border: 1px solid #7c7c7c;
     margin: 4px 4px;
-    border-radius: 1px;
+    border-radius: 2px;
 }
 
 QPushButton:hover,
@@ -1521,13 +1542,13 @@ QPushButton:disabled,
 QPushButton:disabled:checked {
     color: #f5f5f5;
     background-color: #2a2a2a; /* same as enabled color */
-    border: 1px solid #2a2a2a; /* same as enabled color */
+    /*border: 1px solid #2a2a2a; /* same as enabled color */
 }
 
 QPushButton:pressed {
     color: #ffffff;
     background-color: #48699a;
-    border: 1px solid #3c3c3c;
+    /*border: 1px solid #3c3c3c;*/
 }
 
 QPushButton:checked {
@@ -1647,11 +1668,12 @@ QPushButton#buttonClose {
 QDialogButtonBox > QPushButton {
     color: #e0e0e0;
     text-align: center;
-    background-color: #2a2a2a;
-    border: 1px solid #494949;
-    padding: 4px;
-    margin-right: 8px;
-    min-width: 60px;
+    background-color: #545353;
+    padding: 4px 20px;
+    border: 1px solid #7c7c7c;
+    margin: 4px 4px;
+    border-radius: 2px;
+					
 }
 
 /* Color Buttons */
@@ -1735,7 +1757,7 @@ QDialog QToolButton {
     color: #e0e0e0;
     text-align: center;
     background-color: #2a2a2a;
-    border: 1px solid #494949;
+    border: 2px solid #494949;
     padding: 0px; /* different than regular QPushButton */
     margin: 2px;
     min-height: 16px; /* same as QTabBar QPushButton min-width */
@@ -2094,11 +2116,13 @@ QToolBar > QDateTimeEdit {
 }
 
 QToolBar > QPushButton {
-    padding: 0px;
-    margin: 0px; /* doesn't work with :left, :right:, :top or :bottom sub-controls */
-    min-width: 16px; /* could not be larger due to switchable Preferences "Size of toolbar icons" */
-    min-height: 16px; /* could not be larger due to switchable Preferences "Size of toolbar icons" */
-    border-radius: 1px; /* same as regular QPushButton */
+    color: #e0e0e0;
+    text-align: center;
+    background-color: #545353;
+    padding: 4px 20px;
+    border: 1px solid #7c7c7c;
+    margin: 4px 4px;
+    border-radius: 2px;
 }
 
 QToolBar > QPushButton:checked {
@@ -2460,6 +2484,9 @@ QToolBar#Selector QToolButton:!checked:pressed {
 /*==================================================================================================
 TABBAR widget (3rd party plugin)
 ==================================================================================================*/
+	QTabWidget {
+     /*qproperty-tabPosition: East*/
+}		
 QTabWidget#TabBar > QTabBar {
     border-top: 0;
 }
