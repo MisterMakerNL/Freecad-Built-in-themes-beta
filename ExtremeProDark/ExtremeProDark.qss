@@ -2026,63 +2026,63 @@ QSlider:!active {
 }
 
 QSlider:horizontal {
-    padding: 0px 1px;
+    padding: 0px 10px;
 }
 
 QSlider:vertical {
-    padding: 1px 0px;
+    padding: 10px 0px;
 }
 
 QSlider::groove {
-    background-color: #2a2a2a;
-    border: 0px solid #3c3c3c;
-    border-radius: 0px;
-    margin: 0px 0px;
+    background-color: rgba(0,0,0,30);
+    border: 1px solid rgba(0,0,0,40);
+    border-radius: 5px;
+    margin: 4px 0px;
 }
 
 QSlider::groove:horizontal {
-    height: 0px;
+    height: 8px;
 }
 
 QSlider::groove:vertical {
-    width: 0px;
+    width: 8px;
 }
 
 QSlider::groove:horizontal:disabled,
 QSlider::groove:vertical:disabled {
-    border-color:  #3c3c3c;
-    background-color: #2a2a2a;
+    border-color:  #363636;
+    background-color: #363636;
 }
 
 QSlider::handle:horizontal,
 QSlider::handle:vertical {
     background-color: #696969;
-    border: 0px solid #2a2a2a;
-    width: 16px;
-    height: 16px;
-    border-radius: 0px;
+    border: 1px solid #696969;
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
 }
 
 QSlider::handle:horizontal {
-    margin: 0px 0;
+    margin: -4px 0;
 }
 
 QSlider::handle:vertical {
-    margin: 0 0px;
+    margin: 0 -4px;
 }
 
 QSlider::handle:horizontal:hover,
 QSlider::handle:vertical:hover,
 QSlider::handle:horizontal:pressed,
 QSlider::handle:vertical:pressed {
-    border-color: #adc5ed;
-    background-color: #557BB6;
+    border-color: #65A2E5;
+    background-color: #65A2E5;
 }
 
 QSlider::handle:horizontal:disabled,
 QSlider::handle:vertical:disabled {
-    border-color: #2a2a2a;
-    background-color: #557BB6;
+    border-color: #363636;
+    background-color: #363636;
 }
 
 
