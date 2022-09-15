@@ -1266,8 +1266,8 @@ QDateTimeEdit {
     border: 0px solid #2B2B2B;
     border-radius: 1px;
     min-width: 50px; /* it ensures the default value is correctly displayed */
-    min-height: 16px; /* important to be a pair number in order to up/down buttons to be divisible by two (if not set could create a blank line in Ubuntu. Its downside is that it's needed to reset it (min-width: 0px) on following elements that can't have it such as fields inside QToolBar and inside QTreeView (Property editor) */
-    padding: 1px 2px; /* temporal: could don't be compatible with elements inside Tree/List view */
+    min-height: 14px; /* important to be a pair number in order to up/down buttons to be divisible by two (if not set could create a blank line in Ubuntu. Its downside is that it's needed to reset it (min-width: 0px) on following elements that can't have it such as fields inside QToolBar and inside QTreeView (Property editor) */
+    padding: 1px 1px; /* temporal: could don't be compatible with elements inside Tree/List view */
 }
 
 /* more contrast for QTextEdits */
