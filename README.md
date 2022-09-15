@@ -15,7 +15,9 @@ Feel free to discuss this theme and addon on https://forum.freecadweb.org/viewto
 ## Screenshots
 
 Right Click/View Image too see in 4K
-
+new version
+![afbeelding](https://user-images.githubusercontent.com/29804962/190500980-d61c4e27-a873-4aa5-9cf0-76a408ab8918.png)
+old version
 ![afbeelding](https://user-images.githubusercontent.com/29804962/179059215-008b02d1-a49a-4e11-8302-06c7b4e1c3cf.png)
 
 ## License
