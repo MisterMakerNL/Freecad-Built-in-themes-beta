@@ -612,7 +612,7 @@ QScrollBar:vertical {
 }
 
 QScrollBar::handle:horizontal {
-  background-color: #696968;
+  background-color: #696969;
   border: 1px solid #2b2b2b;
   border-radius: 1.9px;
   min-width: 8px;
@@ -630,7 +630,7 @@ QScrollBar::handle:horizontal:focus {
 }
 
 QScrollBar::handle:vertical {
-  background-color: #696968;
+  background-color: #696969;
   border: 1px solid #2b2b2b;
   min-height: 8px;
   border-radius: 1.9px;
@@ -843,7 +843,7 @@ QToolBar::separator:vertical {
 QToolButton#qt_toolbar_ext_button {
 margin: 0px;
 padding: 0px;
-background-color: #696968;
+background-color: #696969;
 /*background-image: url(qss:images_dark-light/more_light.svg);*/
 background-repeat: none;
 background-position: center center;
@@ -1050,7 +1050,7 @@ QProgressBar {
 QProgressBar:disabled {
   background-color: #161616;
   border: 1px solid #696968;
-  color: #696968;
+  color: #696969;
   border-radius: 1.9px;
   text-align: center;
 }
@@ -1411,6 +1411,13 @@ QComboBox::down-arrow:on, QComboBox::down-arrow:hover, QComboBox::down-arrow:foc
 /*==================================================================================================
 Tasks panel (custom FreeCAD class)
 ==================================================================================================*/
+Gui--PropertyEditor--PropertyEditor {
+  qproperty-groupTextColor: white;
+  qproperty-groupBackground: #3c3c3c;
+  border: 1px solid #696968;
+
+}
+
 /* Action group */
 QFrame[class="panel"] {
 background-color: transparent; /* temporal (transparent background) */
@@ -2177,6 +2184,7 @@ QHeaderView {
   padding: 0;
   margin: 0;
   border-radius: 0;
+  text-align: center;
 }
 
 QHeaderView:disabled {
@@ -2188,7 +2196,7 @@ QHeaderView::section {
   background-color: #3c3c3c;
   color: White;
   border-radius: 0;
-  text-align: left;
+  text-align: center;
   font-size: 13px;
   font-weight: bold;
   text-align: center;
