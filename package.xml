@@ -11,8 +11,9 @@
 <content>
   <preferencepack>
     <name>ExtremeProDark</name>
-    <description>Dark mode color scheme with Linkstage overlay stylesheet, It is designed to optimize screenspace. For any issues please visit the Github.</description>
+    <description>Scripted from a default dark theme from the ground up, fixes a lot of bugs that most other Dark theme's have. It also has the Linkstage overlay settings, if you are using linkstage. RESTART FREECAD FOR CORRECT LINK COLORS</description>
     <tag>blue</tag>
+    <tag>2022</tag>
     <tag>stylesheet</tag>
     <tag>dark</tag>
     <tag>Linkstage</tag>
