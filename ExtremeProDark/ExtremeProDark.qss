@@ -2166,6 +2166,10 @@ QTableCornerButton::section {
   border-radius: 0px;
 }
 
+QTableView::item{
+  color: white;
+}
+
 /* QHeaderView ------------------------------------------------------------
 
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qheaderview
