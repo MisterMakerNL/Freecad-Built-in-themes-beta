@@ -651,23 +651,24 @@ QScrollBar::add-line:horizontal {
   margin: 0px 0px 0px 0px;
   border-image: url(qss:images_dark-light/right_arrow_light.svg);
   height: 10px;
-  width: 8px;
+  width: 7px;
   subcontrol-position: right;
   subcontrol-origin: margin;
 }
 
 QScrollBar::add-line:horizontal:hover, QScrollBar::add-line:horizontal:on {
   border-image: url(qss:images_dark-light/right_arrow_lighter.svg);
+  background-color: #557bb6;
   height: 10px;
-  width: 8px;
+  width: 7px;
   subcontrol-position: right;
   subcontrol-origin: margin;
 }
 
 QScrollBar::add-line:vertical {
-  margin: 3px 0px 3px 0px;
+  margin: 0px 0px 0px 0px;
   border-image: url(qss:images_dark-light/down_arrow_light.svg);
-  height: 8px;
+  height: 7px;
   width: 10px;
   subcontrol-position: bottom;
   subcontrol-origin: margin;
@@ -675,23 +676,25 @@ QScrollBar::add-line:vertical {
 
 QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on {
   border-image: url(qss:images_dark-light/down_arrow_lighter.svg);
-  height: 8px;
+  background-color: #557bb6;
+  height: 7px;
   width: 10px;
   subcontrol-position: bottom;
   subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:horizontal {
-  margin: 0px 3px 0px 3px;
+  margin: 0px 0px 0px 0px;
   border-image: url(qss:images_dark-light/left_arrow_light.svg);
   height: 10px;
-  width: 8px;
+  width: 7px;
   subcontrol-position: left;
   subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on {
   border-image: url(qss:images_dark-light/left_arrow_lighter.svg);
+  background-color: #557bb6;
   height: 10px;
   width: 8px;
   subcontrol-position: left;
@@ -699,7 +702,7 @@ QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on {
 }
 
 QScrollBar::sub-line:vertical {
-  margin: 3px 0px 3px 0px;
+  margin: 0px 0px 0px 0px;
   border-image: url(qss:images_dark-light/up_arrow_light.svg);
   height: 8px;
   width: 10px;
@@ -708,6 +711,7 @@ QScrollBar::sub-line:vertical {
 }
 
 QScrollBar::sub-line:vertical:hover, QScrollBar::sub-line:vertical:on {
+  background-color: #557bb6;
   border-image: url(qss:images_dark-light/up_arrow_lighter.svg);
   height: 8px;
   width: 10px;
@@ -879,7 +883,7 @@ QAbstractSpinBox {
 }
 
 QAbstractSpinBox:up-button {
-  background-color: transparent #6fff00;
+  background-color: #696968;
   subcontrol-origin: border;
   subcontrol-position: top right;
   border-left: 1px solid #696968;
@@ -898,11 +902,11 @@ QAbstractSpinBox::up-arrow, QAbstractSpinBox::up-arrow:disabled, QAbstractSpinBo
 }
 
 QAbstractSpinBox::up-arrow:hover {
-  image: url(qss:images_dark-light/up_arrow_light.svg);
+  background-color: #557bb6;
 }
 
 QAbstractSpinBox:down-button {
-  background-color: transparent #4dff00;
+  background-color: #696968;
   subcontrol-origin: border;
   subcontrol-position: bottom right;
   border-left: 1px solid #696968;
@@ -921,7 +925,7 @@ QAbstractSpinBox::down-arrow, QAbstractSpinBox::down-arrow:disabled, QAbstractSp
 }
 
 QAbstractSpinBox::down-arrow:hover {
-  image: url(qss:images_dark-light/qss:down_arrow_light.svg);
+  background-color: #557bb6;
 }
 
 QAbstractSpinBox:hover {
@@ -930,7 +934,7 @@ QAbstractSpinBox:hover {
 }
 
 QAbstractSpinBox:focus {
-  border: 1px solid #557bb6;
+  border: 1px solid #560062;
 }
 
 QAbstractSpinBox:selected {
@@ -1366,7 +1370,7 @@ QComboBox::indicator {
   background-color: transparent;
   selection-background-color: transparent;
   color: transparent;
-  selection-color: transparent;
+  selection-color: #557bb6;
   /* Needed to remove indicator - fix #132 */
 }
 
@@ -1392,9 +1396,13 @@ QComboBox::item:alternate {
 
 QComboBox::drop-down {
   subcontrol-origin: padding;
+  background-color: #696969;
   subcontrol-position: top right;
   width: 14px;
   border-left: 1px solid #696968;
+}
+QComboBox::drop-down:hover {
+  background-color: #557bb6;
 }
 
 QComboBox::down-arrow {
