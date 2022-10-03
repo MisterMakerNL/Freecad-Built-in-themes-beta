@@ -2118,7 +2118,7 @@ QColumnView {
   background-color: #2b2b2b;  /* background of a lot of stuff including spreadsheets.*/
   border: 0px solid #696968;
   color: White;
-  gridline-color: #2b2b2b;
+  gridline-color: #696968;
   border-radius: 0px;
 }
 
@@ -2183,7 +2183,7 @@ QTableCornerButton::section {
 }
 
 QTableView::item{
-    color: white;
+    color: #b0b0b0;
 }
 
 /* QHeaderView ------------------------------------------------------------
