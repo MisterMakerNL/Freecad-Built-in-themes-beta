@@ -2373,34 +2373,39 @@ https://stackoverflow.com/questions/14581498/qt-stylesheet-for-hline-vline-color
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qsplitter
 
 --------------------------------------------------------------------------- */
+
 QSplitter {
   background-color: #2b2b2b;
-  spacing: 0px;
-  padding: 0px;
-  margin: 0px;
+  spacing: 1px;
+  padding: 1px;
+  margin: 1px;
 }
 
 QSplitter::handle {
-  background-color: #696969;
-  border: 1px solid #696968;
-  spacing: 0px;
-  padding: 1px;
-  margin: 0px;
+  margin: 0px 11px;
+  padding: 0px;
+}
+
+QSplitter::handle:horizontal {
+  background-image: url(qss:images_dark-light/splitter_vertical_light.svg);
+  background-position: center center;
+  background-repeat: none;
+  margin: 4px 2px 4px 2px;
+  width: 2px;
+}
+
+QSplitter::handle:vertical {
+  background-image: url(qss:images_dark-light/splitter_horizontal_light.svg);
+  background-position: center center;
+  background-repeat: none;
+  margin: 2px 4px 2px 4px;
+  height: 2px;
 }
 
 QSplitter::handle:hover {
   background-color: #557bb6;
 }
 
-QSplitter::handle:horizontal {
-  width: 3px;
-  image: url(qss:images_dark-light/splitter_horizontal_light);
-}
-
-QSplitter::handle:vertical {
-  height: 3px;
-  image: url(qss:images_dark-light/splitter_vertical_light);
-}
 
 /* QDateEdit, QDateTimeEdit -----------------------------------------------
 
