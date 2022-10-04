@@ -1,4 +1,4 @@
-# ExtremeProDark
+# ExtremeProLight
 Optimized version of the ProDark preference pack. Based on VertUI and Prodark.
 
 ![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/ExtremeProDark_200x200.png)
