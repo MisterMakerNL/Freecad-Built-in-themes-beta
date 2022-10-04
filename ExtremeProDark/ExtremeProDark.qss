@@ -379,7 +379,7 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qmenubar
 QMenuBar {
   background-color: #161616;
   padding: 1px;
-  border: 2px solid rgba(0,0,0,140);
+  border: 0px solid rgba(0,0,0,140);
   color: White;
   selection-background-color: #557bb6;
 }
@@ -541,7 +541,7 @@ QMenu::indicator:exclusive:checked:disabled {
 QMenu::right-arrow {
   margin: 5px;
   padding-left: 12px;
-  image:url(qss:images_dark-light/right_arrow_light.svg);
+  image:url(qss:images_dark-light/right_arrow_lighter.svg);
   height: 12px;
   width: 12px;
   background-color: transparent;
@@ -649,7 +649,7 @@ QScrollBar::handle:vertical:focus {
 
 QScrollBar::add-line:horizontal {
   margin: 0px 0px 0px 0px;
-  border-image: url(qss:images_dark-light/right_arrow_light.svg);
+  border-image: url(qss:images_dark-light/right_arrow_lighter.svg);
   height: 10px;
   width: 7px;
   subcontrol-position: right;
@@ -667,7 +667,7 @@ QScrollBar::add-line:horizontal:hover, QScrollBar::add-line:horizontal:on {
 
 QScrollBar::add-line:vertical {
   margin: 0px 0px 0px 0px;
-  border-image: url(qss:images_dark-light/down_arrow_light.svg);
+  border-image: url(qss:images_dark-light/down_arrow_lighter.svg);
   height: 7px;
   width: 10px;
   subcontrol-position: bottom;
@@ -685,7 +685,7 @@ QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on {
 
 QScrollBar::sub-line:horizontal {
   margin: 0px 0px 0px 0px;
-  border-image: url(qss:images_dark-light/left_arrow_light.svg);
+  border-image: url(qss:images_dark-light/left_arrow_lighter.svg);
   height: 10px;
   width: 7px;
   subcontrol-position: left;
@@ -703,7 +703,7 @@ QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on {
 
 QScrollBar::sub-line:vertical {
   margin: 0px 0px 0px 0px;
-  border-image: url(qss:images_dark-light/up_arrow_light.svg);
+  border-image: url(qss:images_dark-light/up_arrow_lighter.svg);
   height: 8px;
   width: 10px;
   subcontrol-position: top;
@@ -989,7 +989,7 @@ QTextBrowser:disabled {
 }
 
 QTextBrowser:hover, QTextBrowser:!hover, QTextBrowser:selected, QTextBrowser:pressed {
-  border: 1px solid #455364;
+  border: 1px solid #557bb6;
 }
 
 /* QGraphicsView ----------------------------------------------------------
@@ -997,7 +997,7 @@ QTextBrowser:hover, QTextBrowser:!hover, QTextBrowser:selected, QTextBrowser:pre
 --------------------------------------------------------------------------- */
 QGraphicsView {
   background-color: transparent;
-  border: 0px solid #455364;
+  border: 0px solid #557bb6;
   color: White;
   border-radius: 0px;
 }
@@ -1266,7 +1266,7 @@ QToolButton::menu-indicator {
 }
 
 QToolButton::menu-arrow {
-  image: url(qss:images_dark-light/down_arrow_light.svg);
+  image: url(qss:images_dark-light/down_arrow_lighter.svg);
   width: 1.5ex;
   padding: 2px;
   border-radius: 2px;
@@ -1280,7 +1280,7 @@ QToolButton::menu-arrow:open {
 }
 QToolButton::menu-arrow:hover {
   image: url(qss:images_dark-light/down_arrow_lighter.svg);
-  background: #000000;
+  background: #557bb6;
 }
 
 /* QCommandLinkButton -----------------------------------------------------
@@ -1413,7 +1413,7 @@ QComboBox::down-arrow {
 }
 
 QComboBox::down-arrow:on, QComboBox::down-arrow:hover, QComboBox::down-arrow:focus {
-  image: url(qss:images_dark-light/down_arrow_light.svg);
+  image: url(qss:images_dark-light/down_arrow_lighter.svg);
 }
 
 
@@ -1477,7 +1477,7 @@ padding: 0px;
 
 QSint--ActionGroup QFrame[class="header"] QLabel {
 background-color: transparent;
-background-image: url(qss:images_dark-light/down_arrow_light.svg);
+background-image: url(qss:images_dark-light/down_arrow_lighter.svg);
 background-repeat: none;
 background-position: center center;
 padding: 0px;
@@ -1491,7 +1491,7 @@ background-image: url(qss:images_dark-light/down_arrow_lighter.svg);
 
 QSint--ActionGroup QFrame[class="header"] QLabel[fold="true"] {
 background-color: transparent;
-background-image: url(qss:images_dark-light/up_arrow_light.svg);
+background-image: url(qss:images_dark-light/up_arrow_lighter.svg);
 background-repeat: none;
 background-position: center center;
 padding: 0px;
@@ -1629,7 +1629,7 @@ QSlider::handle:horizontal:focus {
 
 QSlider::handle:vertical {
   background: #c2c7cb;;
-  border: 1px solid #455364;
+  border: 1px solid #696968;
   width: 8px;
   height: 8px;
   margin: 0 -8px;
@@ -1937,7 +1937,7 @@ QTabBar QToolButton:pressed:hover, QDockWidget QTabBar QToolButton:pressed:hover
 }
 
 QTabBar QToolButton::left-arrow:enabled, QDockWidget QTabBar QToolButton::left-arrow:enabled {
-  image: url(qss:images_dark-light/left_arrow_light.svg);
+  image: url(qss:images_dark-light/left_arrow_lighter.svg);
 }
 
 QTabBar QToolButton::left-arrow:disabled, QDockWidget QTabBar QToolButton::left-arrow:disabled {
@@ -1945,7 +1945,7 @@ QTabBar QToolButton::left-arrow:disabled, QDockWidget QTabBar QToolButton::left-
 }
 
 QTabBar QToolButton::right-arrow:enabled, QDockWidget QTabBar QToolButton::right-arrow:enabled {
-  image: url(qss:images_dark-light/right_arrow_light.svg);
+  image: url(qss:images_dark-light/right_arrow_lighter.svg);
 }
 
 QTabBar QToolButton::right-arrow:disabled, QDockWidget QTabBar QToolButton::right-arrow:disabled {
@@ -2257,7 +2257,7 @@ QHeaderView::section::vertical:disabled {
 QHeaderView::down-arrow {
   /* Those settings (border/width/height/background-color) solve bug */
   /* transparent arrow background and size */
-  background-color: #455364;
+  background-color: #696969;
   border: none;
   height: 12px;
   width: 12px;
@@ -2267,7 +2267,7 @@ QHeaderView::down-arrow {
 }
 
 QHeaderView::up-arrow {
-  background-color: #455364;
+  background-color: #696969;
   border: none;
   height: 12px;
   width: 12px;
@@ -2284,12 +2284,12 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtoolbox
 QToolBox {
   padding: 0px;
   border: 0px;
-  border: 1px solid #455364;
+  border: 1px solid #696968;
 }
 
 QToolBox:selected {
   padding: 0px;
-  border: 2px solid #346792;
+  border: 2px solid #557bb6;
 }
 
 QToolBox::tab {
@@ -2437,7 +2437,7 @@ QDateEdit::down-arrow, QDateTimeEdit::down-arrow {
 }
 
 QDateEdit::down-arrow:on, QDateEdit::down-arrow:hover, QDateEdit::down-arrow:focus, QDateTimeEdit::down-arrow:on, QDateTimeEdit::down-arrow:hover, QDateTimeEdit::down-arrow:focus {
-  image: url(qss:images_dark-light/down_arrow_light.svg);
+  image: url(qss:images_dark-light/down_arrow_lighter.svg);
 }
 
 QDateEdit QAbstractItemView, QDateTimeEdit QAbstractItemView {
