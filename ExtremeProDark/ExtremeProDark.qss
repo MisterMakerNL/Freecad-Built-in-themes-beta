@@ -470,16 +470,16 @@ QMenu::icon:checked { /* appearance of a 'checked' icon */
   border-radius: 0px;
 }
 QMenu::indicator:non-exclusive:unchecked {
-  image: url(qss:images_dark-light/checkbox_unchecked.png);
+  image: url(qss:images_dark-light/checkbox_unchecked.svg);
 }
 
 QMenu::indicator:non-exclusive:unchecked:hover, QMenu::indicator:non-exclusive:unchecked:focus, QMenu::indicator:non-exclusive:unchecked:pressed {
   border: none;
-  image: url(qss:images_dark-light/checkbox_unchecked_focus.png);
+  image: url(qss:images_dark-light/checkbox_unchecked_focus.svg);
 }
 
 QMenu::indicator:non-exclusive:unchecked:disabled {
-  image: url(qss:images_dark-light/checkbox_unchecked_disabled.png);
+  image: url(qss:images_dark-light/checkbox_unchecked_disabled.svg);
 }
 
 QMenu::indicator:non-exclusive:checked {
@@ -786,7 +786,7 @@ QSizeGrip {
   background: transparent;
   width: 12px;
   height: 12px;
-  image:url(qss:images_dark-light/sizegrip_dark);
+  image:url(qss:images_dark-light/sizegrip_light.svg);
 }
 
 /* QStackedWidget ---------------------------------------------------------
@@ -843,7 +843,7 @@ QToolBar::separator:vertical {
   background-color: transparent;
 }
 
-/*The "show more" button  (it can also be stylable with "QToolBarExtension"  icon is not working*/
+/*The "show more" button  (it can also be stylable with "QToolBarExtension"  icon is not working Qproperty works but breaks when you move the toolbar see also */
 QToolButton#qt_toolbar_ext_button {
 margin: 0px;
 padding: 0px;
@@ -851,17 +851,20 @@ background-color: #696969;
 /*background-image: url(qss:images_dark-light/more_light.svg);*/
 background-repeat: none;
 background-position: center center;
+/*qproperty-icon:url(qss:images_dark-light/more_light.svg)*/
 }
 
 QToolButton#qt_toolbar_ext_button:hover {
-/* background-image: url(qss:images_dark-light/more_light.svg);*/
+/*background-image: url(qss:images_dark-light/more_light.svg);*/
 background-color: #557bb6;
+/*qproperty-icon:url(qss:images_dark-light/more_light.svg)*/
 }
 
 QToolButton#qt_toolbar_ext_button:on {
-/* background-image: url(qss:images_dark-light/more_light.svg);*/
+/*background-image: url(qss:images_dark-light/more_light.svg);*/
 border-color: #696968;
 background-color: #557bb6;
+/*qproperty-icon:url(qss:images_dark-light/more_light.svg)*/
 }
 
 
@@ -2263,7 +2266,7 @@ QHeaderView::down-arrow {
   width: 12px;
   padding-left: 2px;
   padding-right: 2px;
-  image: url(qss:images_dark-light/arrow_down.png);
+  image: url(qss:images_dark-light/down_arrow_light.svg);
 }
 
 QHeaderView::up-arrow {
@@ -2273,7 +2276,7 @@ QHeaderView::up-arrow {
   width: 12px;
   padding-left: 2px;
   padding-right: 2px;
-  image: url(qss:images_dark-light/arrow_up.png);
+  image: url(qss:images_dark-light/up_arrow_light.svg);
 }
 
 /* QToolBox --------------------------------------------------------------
