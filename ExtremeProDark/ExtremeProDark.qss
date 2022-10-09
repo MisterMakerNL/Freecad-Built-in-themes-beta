@@ -2187,7 +2187,7 @@ QTableCornerButton::section {
 }
 
 QTableView::item {
-    /*color: #b0b0b0;*/
+    color: white;
 }
 QTableView {
   qproperty-AliasedCellBackgroundColor: #f700ff;
