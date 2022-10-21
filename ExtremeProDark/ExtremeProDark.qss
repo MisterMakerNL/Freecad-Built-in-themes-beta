@@ -179,7 +179,7 @@ QCheckBox {
 }
 
 QCheckBox:focus {
-  border: none;
+  border: 1px solid #560062;
 }
 
 QCheckBox QWidget:disabled {
@@ -311,7 +311,7 @@ QRadioButton {
 }
 
 QRadioButton:focus {
-  border: none;
+  border: 1px solid #560062;
 }
 
 QRadioButton:disabled {
@@ -385,7 +385,7 @@ QMenuBar {
 }
 
 QMenuBar:focus {
-  border: 1px solid #557bb6;
+  border: 1px solid #560062;
 }
 
 QMenuBar::item {
@@ -626,7 +626,7 @@ QScrollBar::handle:horizontal:hover {
 }
 
 QScrollBar::handle:horizontal:focus {
-  border: 1px solid #557bb6;
+  border: 1px solid #560062;
 }
 
 QScrollBar::handle:vertical {
@@ -644,7 +644,7 @@ QScrollBar::handle:vertical:hover {
 }
 
 QScrollBar::handle:vertical:focus {
-  border: 1px solid #557bb6;
+  border: 1px solid #560062;
 }
 
 QScrollBar::add-line:horizontal {
@@ -750,7 +750,7 @@ QTextEdit {
 }
 
 QTextEdit:focus {
-  border: 1px solid #557bb6;
+  border: 1px solid #560062;
 }
 
 QTextEdit:selected {
@@ -882,6 +882,7 @@ QAbstractSpinBox {
   padding-left: 4px;
   padding-right: 4px;
   border-radius: 1.9px;
+  min-height: 1.5em;
   /* min-width: 5px; removed to fix 109 */
 }
 
@@ -1361,7 +1362,7 @@ QComboBox:hover {
 }
 
 QComboBox:focus {
-  border: 2px solid #557bb6;
+  border: 1px solid #560062;
 }
 
 QComboBox:on {
@@ -1555,9 +1556,36 @@ background-color: black;
 }
 
 
+QSint--ActionGroup QFrame[class="content"] QToolButton {
+  color: white;
+  text-align: center;
+  background-color: #696969;
+  border: 0px solid #adadad;
+  padding: 1px 1px; /* different than regular QPushButton */
+  margin: 0px; /* different than regular QPushButton */
+  min-height: 16px; /* same as QTabBar QPushButton min-width */
+  border-radius: 1px;
+}
+
+QSint--ActionGroup QFrame[class="content"] QToolButton:hover{
+  background: #557bb6;
+  border: 1px solid #557bb6;
+}
+QSint--ActionGroup QFrame[class="content"] QToolButton:focus {
+  border: 1px solid #560062;
+}
 
 
+QSint--ActionGroup QFrame[class="content"] QToolButton:disabled,
+QSint--ActionGroup QFrame[class="content"] QToolButton:disabled:checked {
+    color: #696969;
+    background-color: black;
+}
 
+QSint--ActionGroup QFrame[class="content"] QToolButton:pressed {
+  background: #557bb6;
+  border: 1px solid #557bb6;
+}
 
 /* QSlider ----------------------------------------------------------------
 
@@ -1569,7 +1597,7 @@ QSlider:disabled {
 }
 
 QSlider:focus {
-  border: none;
+  border: 1px solid #560062;
 }
 
 QSlider::groove:horizontal {
@@ -1627,7 +1655,7 @@ QSlider::handle:horizontal:hover {
 }
 
 QSlider::handle:horizontal:focus {
-  border: 1px solid #557bb6;
+  border: 1px solid #560062;
 }
 
 QSlider::handle:vertical {
@@ -1645,7 +1673,7 @@ QSlider::handle:vertical:hover {
 }
 
 QSlider::handle:vertical:focus {
-  border: 1px solid #557bb6;
+  border: 1px solid #560062;
 }
 
 /* QLineEdit --------------------------------------------------------------
@@ -2190,8 +2218,8 @@ QTableView::item {
     color: white;
 }
 QTableView {
-  /*qproperty-AliasedCellBackgroundColor: #f700ff;
-  qproperty-aliasBgColor: #f700ff;*/
+  /*qproperty-AliasedCellBackgroundColor: #f700ff;*/
+  /*qproperty-aliasBgColor: #f700ff;*/
 }
 
 /* QHeaderView ------------------------------------------------------------
