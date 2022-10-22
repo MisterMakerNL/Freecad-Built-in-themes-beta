@@ -197,10 +197,10 @@ QCheckBox::indicator {
 }
 
 QCheckBox::indicator:unchecked {
-  image: url(qss:images_dark-light/images_dark-light/checkbox_light.svg);
+
 }
 
-QCheckBox::indicator:unchecked:hover, QCheckBox::indicator:unchecked:focus, QCheckBox::indicator:unchecked:pressed {
+QCheckBox::indicator:unchecked:hover,  QCheckBox::indicator:unchecked:pressed {
   background-color: #557BB6;
 }
 
@@ -208,16 +208,19 @@ QCheckBox::indicator:unchecked:disabled {
 }
 
 QCheckBox::indicator:checked {
-  background-color: #557BB6; /* QRadioButton has the same color */
   border: 1px solid #696968; /* QRadioButton has the same color */
   image:url(qss:images_dark-light/checkbox_light.svg);
 }
 
-QCheckBox::indicator:checked:hover, QCheckBox::indicator:checked:focus, QCheckBox::indicator:checked:pressed {
+QCheckBox::indicator:checked:hover, QCheckBox::indicator:checked:pressed {
   border: none;
+  background-color: #557BB6; /* QRadioButton has the same color */
 }
 
 QCheckBox::indicator:checked:disabled {
+  background-color: Black;
+  border: 1px solid #2b2b2b;
+  image: url(qss:images_dark-light/checkbox_indeterminate_light.svg);
 }
 
 QCheckBox::indicator:indeterminate {
@@ -229,9 +232,10 @@ QCheckBox::indicator:indeterminate {
 QCheckBox::indicator:indeterminate:disabled {
   background-color: Black;
   border: 1px solid #2b2b2b;
+  image: url(qss:images_dark-light/checkbox_indeterminate_light.svg);
 }
 
-QCheckBox::indicator:indeterminate:focus, QCheckBox::indicator:indeterminate:hover, QCheckBox::indicator:indeterminate:pressed {
+QCheckBox::indicator:indeterminate:hover, QCheckBox::indicator:indeterminate:pressed {
   background-color: #557BB6; /* QRadioButton has the same color */
 }
 
@@ -301,12 +305,12 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qradiobutton
 
 --------------------------------------------------------------------------- */
 QRadioButton {
-  background-color: #2b2b2b;
+  background-color: transparent;
   color: White;
+  border: none;
   spacing: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
-  border: none;
   outline: none;
 }
 
@@ -315,14 +319,14 @@ QRadioButton:focus {
 }
 
 QRadioButton:disabled {
-  background-color: #2b2b2b;
-  color: #353535;
+  background-color: #696968;
   border: none;
+  color: #353535;
   outline: none;
 }
 
 QRadioButton QWidget {
-  background-color: #2b2b2b;
+  background-color: transparent;
   color: White;
   spacing: 0px;
   padding: 0px;
@@ -331,43 +335,45 @@ QRadioButton QWidget {
 }
 
 QRadioButton::indicator {
-  border: none;
-  outline: none;
+  background-color: #3c3c3c;
+  border: 1px solid #696968;
+  border-radius: 7px;
   margin-left: 2px;
   height: 14px;
   width: 14px;
+  border-radius: 7px;
 }
 
 QRadioButton::indicator:unchecked {
-
+  /*image:url(qss:images_dark-light/radiobutton_light.svg);*/
 }
 
-QRadioButton::indicator:unchecked:hover, QRadioButton::indicator:unchecked:focus, QRadioButton::indicator:unchecked:pressed {
-  border: none;
-  outline: none;
+QRadioButton::indicator:unchecked:hover, QRadioButton::indicator:unchecked:pressed {
+  /*background-color: #557BB6;*/
+  background-color: #557bb6;
+  border: 1px solid #557bb6;
+  border-radius: 7px;
 }
 
 QRadioButton::indicator:unchecked:disabled {
-  image:url(qss:images_dark-light/radiobutton_dark.svg);
+  /*image:url(qss:images_dark-light/radiobutton_dark.svg);*/
+  border: 1px solid #696968;
 }
 
 QRadioButton::indicator:checked {
-  background-color: white;
-  border: none;
-  outline: none;
   image:url(qss:images_dark-light/radiobutton_light.svg);
 }
 
-QRadioButton::indicator:checked:hover, QRadioButton::indicator:checked:focus, QRadioButton::indicator:checked:pressed {
-  border: none;
-  outline: none;
-  background-color: #557BB6;
+QRadioButton::indicator:checked:hover, QRadioButton::indicator:checked:pressed {
+  background-color: #557bb6;
+  border: 1px solid #557bb6;
+  border-radius: 7px;
   image:url(qss:images_dark-light/radiobutton_light.svg);
 }
 
 QRadioButton::indicator:checked:disabled {
   outline: none;
-  background-color: white;
+  background-color: #696968;
   image:url(qss:images_dark-light/radiobutton_dark.svg);
 }
 
