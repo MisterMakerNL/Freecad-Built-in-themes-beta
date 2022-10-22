@@ -337,11 +337,10 @@ QRadioButton QWidget {
 QRadioButton::indicator {
   background-color: #3c3c3c;
   border: 1px solid #696968;
-  border-radius: 7px;
-  margin-left: 2px;
-  height: 14px;
-  width: 14px;
-  border-radius: 7px;
+  border-radius: 6px;
+  margin-left: 0px;
+  height: 11px;
+  width: 11px;
 }
 
 QRadioButton::indicator:unchecked {
