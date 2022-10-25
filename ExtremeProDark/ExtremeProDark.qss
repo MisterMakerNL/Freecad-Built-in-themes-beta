@@ -351,7 +351,7 @@ QRadioButton::indicator:unchecked:hover, QRadioButton::indicator:unchecked:press
   /*background-color: #557BB6;*/
   background-color: #557bb6;
   border: 1px solid #557bb6;
-  border-radius: 7px;
+  border-radius: 6px;
 }
 
 QRadioButton::indicator:unchecked:disabled {
@@ -366,7 +366,7 @@ QRadioButton::indicator:checked {
 QRadioButton::indicator:checked:hover, QRadioButton::indicator:checked:pressed {
   background-color: #557bb6;
   border: 1px solid #557bb6;
-  border-radius: 7px;
+  border-radius: 6px;
   image:url(qss:images_dark-light/radiobutton_light.svg);
 }
 
@@ -748,7 +748,7 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-specific-widgets
 report view
 --------------------------------------------------------------------------- */
 QTextEdit {
-  background-color: Black;
+  background-color: #2b2b2b;
   color: White;
   border-radius: 1.9px;
   border: 0px solid #696968;
@@ -767,14 +767,14 @@ QTextEdit:selected {
 Python
 --------------------------------------------------------------------------- */
 QPlainTextEdit {
-  background-color: #42004b;
+  background-color: #3c3c3c;
   color: White;
   border-radius: 1.9px;
   border: 0px solid #696968;
 }
 
 QPlainTextEdit:focus {
-  border: 1px solid #557bb6;
+  border: 1px solid #560062;
 }
 
 QPlainTextEdit:selected {
