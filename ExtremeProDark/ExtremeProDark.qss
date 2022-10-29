@@ -126,7 +126,7 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtooltip
 
 --------------------------------------------------------------------------- */
 QToolTip {
-  background-color: #2b2b2b;
+  background-color: black;
   color: White;
   /* If you remove the border property, background stops working on Windows */
   border: none;
@@ -2325,44 +2325,49 @@ QHeaderView::up-arrow {
 /* QToolBox --------------------------------------------------------------
 
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtoolbox
+used in PATH
 
 --------------------------------------------------------------------------- */
 QToolBox {
   padding: 0px;
-  border: 0px;
-  border: 1px solid #696968;
+  border: 1px solid #696969;
+  border-radius: 4px;
+  background-color: transparent;
 }
 
 QToolBox:selected {
   padding: 0px;
-  border: 2px solid #557bb6;
+  border: 0px solid #557bb6;
 }
 
 QToolBox::tab {
-  background-color: #2b2b2b;
-  border: 1px solid #696968;
-  color: White;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  background-color: #696969;
+  border: 0px solid #696969;
+  color: white;
+  background-image: url(qss:images_dark-light/down_arrow_lighter.svg);
+  background-repeat: none;
+  background-position: center center;
 }
 
 QToolBox::tab:disabled {
-  color: #c2c7cb;;
+  color: #696969;;
 }
 
 QToolBox::tab:selected {
-  background-color: #3c3c3c;
-  border-bottom: 2px solid #557bb6;
+  background-color: #696969;
+  background-image: url(qss:images_dark-light/transparent.svg);
+  padding-right: 5px;
+  background-repeat: none;
 }
 
 QToolBox::tab:selected:disabled {
-  background-color: #3c3c3c;
-  border-bottom: 2px solid #696968;
+  background-color: #696969;
+  border-bottom: 0px solid #cccccc;
+  color: white;
 }
 
 QToolBox::tab:!selected {
-  background-color: #3c3c3c;
-  border-bottom: 2px solid #3c3c3c;
+
 }
 
 QToolBox::tab:!selected:disabled {
@@ -2370,14 +2375,14 @@ QToolBox::tab:!selected:disabled {
 }
 
 QToolBox::tab:hover {
-  /*border-color: #557bb6;*/
-  border-bottom: 2px solid #557bb6;
-}
-
+  /*border-color: #8ab6e9;*/
+  background-color: #557bb6;
+  }
+/*
 QToolBox QScrollArea QWidget QWidget {
   padding: 0px;
   border: 0px;
-  background-color: #2b2b2b;
+  background-color: transparent;
 }
 
 /* QFrame -----------------------------------------------------------------
