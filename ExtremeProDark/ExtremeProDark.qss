@@ -1518,7 +1518,7 @@ margin: 0px;
 padding: 0px;
 border-bottom: 1px solid #696968;
 border-left: 1px solid #696968;
-border-right: 1px solid #696968;z
+border-right: 1px solid #696968;
 border-top-left-radius: 0px;
 border-top-right-radius: 0px;
 border-bottom-left-radius: 3px;
