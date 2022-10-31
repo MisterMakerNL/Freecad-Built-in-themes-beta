@@ -2,8 +2,7 @@
 ABOUT
 ============================================================================================================
 ExtremeProDark
-A Professional Dark Mode FreeCAD Theme by MisterMaker modded from
-https://github.com/StudioPetrikas/FreeCADLink_VertUI and https://github.com/turn211/ProDarkThemePreferencePack
+A Professional Dark Mode FreeCAD Theme by MisterMaker.
 
 KNOWN BUGS and TO DO
 ============================================================================================================
@@ -12,9 +11,7 @@ https://forum.freecadweb.org/viewtopic.php?f=34&t=68973
 
 LICENSE
 ============================================================================================================
-Probably follow the source copyrights as mentioned above. 
-For me I really don't care, do what you want with it.
-aka no license.
+Do what you want with it as long as it looks awesome!
 
 INSTALLATION
 ============================================================================================================
@@ -31,7 +28,6 @@ INSTALLATION
   I did my best, better than original. But still only tested on windows.
 
 --------------------------------------------------------------------------- */
-/* Light Style - QDarkStyleSheet ------------------------------------------ */
 /*
 
 See Qt documentation:
@@ -74,10 +70,10 @@ QWidget {
 }
 
 QWidget:disabled {
-  background-color: black;
-  color: #c2c7cb;;
+  background-color: transparent;
+  color: #c2c7cb;
   selection-background-color: #557bb6;
-  selection-color: #c2c7cb;;
+  selection-color: #c2c7cb;
 }
 
 QWidget::item:selected {
@@ -183,13 +179,13 @@ QCheckBox:focus {
 }
 
 QCheckBox QWidget:disabled {
-  background-color: #696968;
-  color: #c2c7cb;;
+  background-color: transparent;
+  color: #c2c7cb;
 }
 
 QCheckBox::indicator {
   color: white;
-  background-color: #3c3c3c;
+  background-color: black;
   border: 1px solid #696968;
   width: 12px;
   height: 12px;
@@ -197,7 +193,7 @@ QCheckBox::indicator {
 }
 
 QCheckBox::indicator:unchecked {
-
+  background-color: black;
 }
 
 QCheckBox::indicator:unchecked:hover,  QCheckBox::indicator:unchecked:pressed {
@@ -205,6 +201,7 @@ QCheckBox::indicator:unchecked:hover,  QCheckBox::indicator:unchecked:pressed {
 }
 
 QCheckBox::indicator:unchecked:disabled {
+  background-color: #2b2b2b;
 }
 
 QCheckBox::indicator:checked {
@@ -218,19 +215,19 @@ QCheckBox::indicator:checked:hover, QCheckBox::indicator:checked:pressed {
 }
 
 QCheckBox::indicator:checked:disabled {
-  background-color: Black;
+  background-color: #2b2b2b;
   border: 1px solid #2b2b2b;
   image: url(qss:images_dark-light/checkbox_indeterminate_light.svg);
 }
 
 QCheckBox::indicator:indeterminate {
-  background-color: #696968;
+  background-color: black;
   border: 1px solid #696968;
   image: url(qss:images_dark-light/checkbox_indeterminate_light.svg);
 }
 
 QCheckBox::indicator:indeterminate:disabled {
-  background-color: Black;
+  background-color: #2b2b2b;
   border: 1px solid #2b2b2b;
   image: url(qss:images_dark-light/checkbox_indeterminate_light.svg);
 }
@@ -591,7 +588,8 @@ QAbstractScrollArea:disabled {
 
 --------------------------------------------------------------------------- 
 text input field disabled!!!!*/
-QScrollArea QWidget QWidget:disabled {
+
+QScrollArea QWidget:disabled {
   background-color: #2b2b2b;
 }
 
@@ -970,7 +968,7 @@ QLabel {
 QLabel:disabled {
   background-color: #2b2b2b;
   border: 0px solid #696968;
-  color: #c2c7cb;;
+  color: #c2c7cb;
 }
 
 QLabel[haslink="true"] {
@@ -993,7 +991,7 @@ QTextBrowser {
 QTextBrowser:disabled {
   background-color: #2b2b2b;
   border: 1px solid #696968;
-  color: #c2c7cb;;
+  color: #c2c7cb;
   border-radius: 1.9px;
 }
 
@@ -1014,7 +1012,7 @@ QGraphicsView {
 QGraphicsView:disabled {
   background-color: black;
   border: 0px solid #696968;
-  color: #c2c7cb;;
+  color: #c2c7cb;
   border-radius: 0px;
 }
 
@@ -1032,7 +1030,7 @@ QCalendarWidget {
 
 QCalendarWidget:disabled {
   background-color: #353535;
-  color: #c2c7cb;;
+  color: #c2c7cb;
 }
 
 /* QLCDNumber -------------------------------------------------------------
@@ -1045,7 +1043,7 @@ QLCDNumber {
 
 QLCDNumber:disabled {
   background-color: #2b2b2b;
-  color: #c2c7cb;;
+  color: #c2c7cb;
 }
 
 /* QProgressBar -----------------------------------------------------------
@@ -1168,7 +1166,7 @@ QToolButton {
 
 QToolButton:disabled {
   background-color: #161616;
-  color: #c2c7cb;;
+  color: #c2c7cb;
   border-radius: 1px;
   padding: 0px;
 }
@@ -1182,7 +1180,7 @@ QToolButton:checked {
 
 QToolButton:checked:disabled {
   background-color: #557bb6;
-  color: #c2c7cb;;
+  color: #c2c7cb;
   border-radius: 1.9px;
   padding: 1px;
   outline: none;
@@ -1232,7 +1230,7 @@ QToolButton[popupMode="0"]::menu-button {
 QToolButton[popupMode="0"]::menu-button:hover {
   border: none;
   border-left: 2px solid #fe0000;
-  border-radius: 0;
+  border-radius: 0px;
 }
 QToolButton[popupMode="1"]::menu-button {
   border: none;
@@ -1241,7 +1239,7 @@ QToolButton[popupMode="1"]::menu-button {
 QToolButton[popupMode="1"]::menu-button:hover {
   border: none;
   border-left: 2px solid #e5ff00;
-  border-radius: 0;
+  border-radius: 0px;
 }
 
 QToolButton[popupMode="2"] {
@@ -1306,7 +1304,7 @@ QCommandLinkButton {
 
 QCommandLinkButton:disabled {
   background-color: transparent;
-  color: #c2c7cb;;
+  color: #c2c7cb;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -1322,8 +1320,8 @@ QComboBox {
   background: black;
   border-radius: 2px;
   selection-background-color: #557bb6;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
   /* padding-right = 36; 4 + 16*2 See scrollbar size */
   /* changed to 4px to fix #239 */
   /* Fixes #103, #111 */
@@ -1336,9 +1334,10 @@ QComboBox {
 QComboBox:editable {
   background: white;
 }
+
 QComboBox QAbstractItemView {
   border: 0px solid #696968;
-  border-radius: 0;
+  border-radius: 0px;
   background-color: black;
   selection-background-color: #557bb6;
 }
@@ -1363,7 +1362,8 @@ QComboBox:disabled {
 }
 
 QComboBox:hover {
-  border: 2px solid #557bb6;
+  /*background-color: #557bb6;*/
+  border: 1px solid #557bb6;
 }
 
 QComboBox:focus {
@@ -1376,7 +1376,7 @@ QComboBox:on {
 
 QComboBox::indicator {
   border: none;
-  border-radius: 0;
+  border-radius: 0px;
   background-color: transparent;
   selection-background-color: transparent;
   color: transparent;
@@ -1518,7 +1518,7 @@ margin: 0px;
 padding: 0px;
 border-bottom: 1px solid #696968;
 border-left: 1px solid #696968;
-border-right: 1px solid #696968;z
+border-right: 1px solid #696968;
 border-top-left-radius: 0px;
 border-top-right-radius: 0px;
 border-bottom-left-radius: 3px;
@@ -1664,7 +1664,7 @@ QSlider::handle:horizontal:focus {
 }
 
 QSlider::handle:vertical {
-  background: #c2c7cb;;
+  background: #c2c7cb;
   border: 1px solid #696968;
   width: 8px;
   height: 8px;
@@ -1702,7 +1702,7 @@ QLineEdit {
 
 QLineEdit:disabled {
   background-color: #2b2b2b;
-  color: #c2c7cb;;
+  color: #c2c7cb;
 }
 
 QLineEdit:hover {
@@ -2174,7 +2174,7 @@ QListView:disabled,
 QTableView:disabled,
 QColumnView:disabled {
   background-color: black;
-  color: #c2c7cb;;
+  color: #c2c7cb;
 }
 
 QTreeView:selected,
@@ -2247,7 +2247,7 @@ QHeaderView {
   border: 1px solid #696968;
   padding: 0;
   margin: 0;
-  border-radius: 0;
+  border-radius: 0px;
   text-align: center;
 }
 
@@ -2260,7 +2260,7 @@ QHeaderView:disabled {
 QHeaderView::section {
   background-color: #3c3c3c;
   color: White;
-  border-radius: 0;
+  border-radius: 0px;
   text-align: center;
   font-size: 13px;
   font-weight: bold;
@@ -2344,13 +2344,15 @@ QToolBox::tab {
   background-color: #696969;
   border: 0px solid #696969;
   color: white;
+/*  image: url(qss:images_dark-light/down_arrow_lighter.svg);*/
+  /*image-position: center left;*/
   background-image: url(qss:images_dark-light/down_arrow_lighter.svg);
   background-repeat: none;
-  background-position: center center;
+  background-position: center left;
 }
 
 QToolBox::tab:disabled {
-  color: #696969;;
+  color: #696969;
 }
 
 QToolBox::tab:selected {
