@@ -205,6 +205,7 @@ QCheckBox::indicator:unchecked:disabled {
 }
 
 QCheckBox::indicator:checked {
+  background-color: black;
   border: 1px solid #696968; /* QRadioButton has the same color */
   image:url(qss:images_dark-light/checkbox_light.svg);
 }
@@ -472,12 +473,12 @@ QMenu::icon:checked { /* appearance of a 'checked' icon */
   border-radius: 0px;
 }
 QMenu::indicator:non-exclusive:unchecked {
-  image: url(qss:images_dark-light/checkbox_unchecked.svg);
+  image: url(qss:images_dark-light/checkbox_unchecked_light.svg);
 }
 
 QMenu::indicator:non-exclusive:unchecked:hover, QMenu::indicator:non-exclusive:unchecked:focus, QMenu::indicator:non-exclusive:unchecked:pressed {
   border: none;
-  image: url(qss:images_dark-light/checkbox_unchecked_focus.svg);
+  image: url(qss:images_dark-light/checkbox_unchecked_focus.png);
 }
 
 QMenu::indicator:non-exclusive:unchecked:disabled {
@@ -490,6 +491,7 @@ QMenu::indicator:non-exclusive:checked {
 
 QMenu::indicator:non-exclusive:checked:hover, QMenu::indicator:non-exclusive:checked:focus, QMenu::indicator:non-exclusive:checked:pressed {
   border: none;
+  background: #557BB6;
   image:url(qss:images_dark-light/checkbox_light.svg);
 }
 
@@ -510,34 +512,37 @@ QMenu::indicator:non-exclusive:indeterminate:focus, QMenu::indicator:non-exclusi
 }
 
 QMenu::indicator:exclusive:unchecked {
-  image:url(qss:images_dark-light/radiobutton_light.svg);
+  image: url(qss:images_dark-light/transparent.svg);
+  /*image:url(qss:images_dark-light/checkbox_unchecked_light.svg);*/
 }
 
 QMenu::indicator:exclusive:unchecked:hover, QMenu::indicator:exclusive:unchecked:focus, QMenu::indicator:exclusive:unchecked:pressed {
   border: none;
   outline: none;
-  image:url(qss:images_dark-light/radiobutton_light.svg);
+  background: #557BB6;
+  image: url(qss:images_dark-light/checkbox_unchecked_light.svg);
 }
 
 QMenu::indicator:exclusive:unchecked:disabled {
-  image:url(qss:images_dark-light/radiobutton_light.svg);
+  image: url(qss:images_dark-light/checkbox_unchecked_light.svg);
 }
 
 QMenu::indicator:exclusive:checked {
   border: none;
   outline: none;
-  image:url(qss:images_dark-light/radiobutton_light.svg);
+  image: url(qss:images_dark-light/radiobutton_light.svg);
 }
 
 QMenu::indicator:exclusive:checked:hover, QMenu::indicator:exclusive:checked:focus, QMenu::indicator:exclusive:checked:pressed {
   border: none;
   outline: none;
-  image:url(qss:images_dark-light/radiobutton_light.svg);
+  background: #557BB6;
+  image: url(qss:images_dark-light/checkbox_unchecked_light.svg);
 }
 
 QMenu::indicator:exclusive:checked:disabled {
   outline: none;
-  image:url(qss:images_dark-light/radiobutton_light.svg);
+  image: url(qss:images_dark-light/radiobutton_light.svg);
 }
 
 QMenu::right-arrow {
@@ -1268,21 +1273,18 @@ QToolButton::menu-button:checked:hover {
 
 QToolButton::menu-indicator {
   /* Exclude a shift for better image */
-  subcontrol-position: right bottom;
+  subcontrol-position: center center;
   /* Shift it a bit */
 }
 
 QToolButton::menu-arrow {
   image: url(qss:images_dark-light/down_arrow_lighter.svg);
   width: 1.5ex;
-  padding: 2px;
-  border-radius: 2px;
-  border: 0px #000000;
-  subcontrol-position: right bottom;
-  background: rgba(0, 0, 0, 0.5);
+  subcontrol-position: right center;
+  background: transparent;
 }
 QToolButton::menu-arrow:open {
-  subcontrol-position: right bottom;
+  subcontrol-position: right center;
   image: url(qss:images_dark-light/down_arrow_lighter.svg);
 }
 QToolButton::menu-arrow:hover {
