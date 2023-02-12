@@ -169,8 +169,9 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qcheckbox
 --------------------------------------------------------------------------- */
 QCheckBox {
   color: white;
-  padding: 3px;
+  padding: 0px;
   outline: none;
+  border: 1px solid transparent;
   background-color: transparent;
 }
 
@@ -186,27 +187,31 @@ QCheckBox QWidget:disabled {
 QCheckBox::indicator {
   color: white;
   background-color: black;
-  border: 1px solid #696968;
+  /*border: 1px solid #696968;*/
   width: 12px;
   height: 12px;
-  border-radius:1px;
+  image:url(qss:images_dark-light/checkbox_unchecked_light.svg);
+  /*border-radius:1px;*/
 }
 
 QCheckBox::indicator:unchecked {
   background-color: black;
+  image:url(qss:images_dark-light/checkbox_unchecked_light.svg);
 }
 
 QCheckBox::indicator:unchecked:hover,  QCheckBox::indicator:unchecked:pressed {
   background-color: #557BB6;
+  image:url(qss:images_dark-light/checkbox_unchecked_light.svg);
 }
 
 QCheckBox::indicator:unchecked:disabled {
   background-color: #2b2b2b;
+  image:url(qss:images_dark-light/checkbox_unchecked_disabled.svg);
 }
 
 QCheckBox::indicator:checked {
   background-color: black;
-  border: 1px solid #696968; /* QRadioButton has the same color */
+  /*border: 1px solid #696968; /* QRadioButton has the same color */
   image:url(qss:images_dark-light/checkbox_light.svg);
 }
 
@@ -217,8 +222,8 @@ QCheckBox::indicator:checked:hover, QCheckBox::indicator:checked:pressed {
 
 QCheckBox::indicator:checked:disabled {
   background-color: #2b2b2b;
-  border: 1px solid #2b2b2b;
-  image: url(qss:images_dark-light/checkbox_indeterminate_light.svg);
+  /*border: 1px solid #2b2b2b;*/
+  image: url(qss:images_dark-light/checkbox_checked_light.svg);
 }
 
 QCheckBox::indicator:indeterminate {
@@ -229,14 +234,12 @@ QCheckBox::indicator:indeterminate {
 
 QCheckBox::indicator:indeterminate:disabled {
   background-color: #2b2b2b;
-  border: 1px solid #2b2b2b;
   image: url(qss:images_dark-light/checkbox_indeterminate_light.svg);
 }
 
 QCheckBox::indicator:indeterminate:hover, QCheckBox::indicator:indeterminate:pressed {
   background-color: #557BB6; /* QRadioButton has the same color */
 }
-
 /* QGroupBox --------------------------------------------------------------
 
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qgroupbox
