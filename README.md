@@ -1,5 +1,5 @@
 # ExtremeProDark
-Optimized version of the ProDark preference pack. Based on VertUI and Prodark.
+Build from the ground up, complete new. Has all current bug fixes. So if you find a new one please report them!
 
 ![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/ExtremeProDark_200x200.png)
 
