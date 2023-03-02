@@ -93,8 +93,8 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qmainwindow
 QMainWindow::separator {
   background-color: #3c3c3c;
   border: 0px solid #696968;
-  spacing: 1px;
-  padding: 1px;
+  spacing: 0px;
+  padding: 0px;
 }
 
 QMainWindow::separator:hover {
@@ -103,17 +103,34 @@ QMainWindow::separator:hover {
 }
 
 QMainWindow::separator:horizontal {
-  width: 7px;
-  margin-top: 0.2px;
-  margin-bottom: 0.2px;
-  image: url(qss:images_dark-light/splitter_horizontal_light.svg);
+  width: 4px;
+  margin-top: 0.3px;
+  margin-bottom: 0.3px;
+ /* image: url(qss:images_dark-light/splitter_horizontal_light.svg);*/
 }
 
 QMainWindow::separator:vertical {
-  height: 7px;
-  margin-left: 0.2px;
-  margin-right: 0.2px;
-  image: url(qss:images_dark-light/splitter_vertical_light.svg);
+  height: 4px;
+  margin-left: 0.3px;
+  margin-right: 0.3px;
+ /* image: url(qss:images_dark-light/splitter_vertical_light.svg);*/
+}
+
+QMdiArea {
+  background-image: url(qss:images_dark-light/background_freecad_ExtremProDark.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*==================================================================================================
+Sub windows
+==================================================================================================*/
+QMdiSubWindow {
+  border:1px solid #696968;
+  margin-top: 30px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom:4px;
 }
 
 /* QToolTip ---------------------------------------------------------------
@@ -223,7 +240,7 @@ QCheckBox::indicator:checked:hover, QCheckBox::indicator:checked:pressed {
 QCheckBox::indicator:checked:disabled {
   background-color: #2b2b2b;
   /*border: 1px solid #2b2b2b;*/
-  image: url(qss:images_dark-light/checkbox_checked_light.svg);
+  image: url(qss:images_dark-light/checkbox_light.svg);
 }
 
 QCheckBox::indicator:indeterminate {
@@ -1772,16 +1789,16 @@ QTabBar::close-button, QDockWidget QTabBar::close-button {
   border: 0;
   margin: 0;
   padding: 1px;
-  image: url(qss:images_dark-light/close_dark.svg);
+  image: url(qss:images_dark-light/close_light.svg);
 }
 
 QTabBar::close-button:hover, QDockWidget QTabBar::close-button:hover {
-  image: url(qss:images_dark-light/close_dark.svg);
-  background-color: rgba(255, 0, 0, 0.392);
+  image: url(qss:images_dark-light/close_red.svg);
+  /*background-color: rgba(255, 0, 0, 0.3);*/
 }
 
 QTabBar::close-button:pressed, QDockWidget QTabBar::close-button:pressed {
-  image: url(qss:images_dark-light/close_dark.svg);
+  image: url(qss:images_dark-light/close_light.svg);
 }
 
 QTabBar::tab, QDockWidget QTabBar::tab {
@@ -2038,8 +2055,8 @@ QDockWidget::close-button {
 }
 
 QDockWidget::close-button:hover {    
-  background-color: #557bb6;
-  image: url(qss:images_dark-light/close_light.svg);
+  image: url(qss:images_dark-light/close_red.svg);
+  /*background-color: rgba(255, 0, 0, 0.3);*/
 }
 
 QDockWidget::close-button:pressed {
@@ -2058,8 +2075,8 @@ QDockWidget::float-button {
 }
 
 QDockWidget::float-button:hover {
-  background-color: #557bb6;
-  image: url(qss:images_dark-light/undock_light.svg);
+  /*background-color: #557bb6;*/
+  image: url(qss:images_dark-light/undock_blue.svg);
 }
 
 QDockWidget::float-button:pressed {
