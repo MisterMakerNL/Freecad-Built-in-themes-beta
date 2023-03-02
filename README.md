@@ -1,7 +1,7 @@
 # ExtremeProDark
 Build from the ground up, complete new. Has all current bug fixes. So if you find a new one please report them!
-
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/FreeCAD_icons.gif)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/ExtremeProDark_200x200.png)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/FreeCAD_icons.gif)
 
 ## Installation
 See https://github.com/MisterMakerNL/ExtremeProDark/blob/main/INSTALL.md
