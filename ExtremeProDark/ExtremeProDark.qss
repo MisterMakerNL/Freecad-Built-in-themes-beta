@@ -56,7 +56,24 @@ QToolBar * {
   margin: 0px;
   padding: 0px;
 }
+/*==================================================================================================
+Main window
+==================================================================================================*/
+QMainWindow,
+QDialog,
+QDockWidget,
+QToolBar  {
+    background-color: #2b2b2b; /* main background color */
+}
 
+QMdiArea {
+  background-image: url(qss:images_dark-light/background_freecad_ExtremProDark.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/*=====
 /* QWidget ----------------------------------------------------------------
 
 --------------------------------------------------------------------------- */
@@ -91,46 +108,36 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qmainwindow
 
 --------------------------------------------------------------------------- */
 QMainWindow::separator {
-  background-color: #3c3c3c;
+  /*background-color: #3c3c3c;*/
   border: 0px solid #696968;
   spacing: 0px;
-  padding: 0px;
+  padding: 1px;
 }
 
-QMainWindow::separator:hover {
-  background-color: #557bb6;
-  border: 0px solid #557bb6;
+QMainWindow::separator:vertical:hover {
+  background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0.2 transparent,stop:0.5 #557bb6, stop:0.8 transparent);
+  /*background-color: #557bb6;*/
+  image: url(qss:images_dark-light/splitter_vertical_light.svg);
+}
+
+QMainWindow::separator:horizontal:hover {
+  background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0,stop:0.2 transparent,stop:0.5 #557bb6, stop:0.8 transparent);
+  /*background-color: #557bb6;*/
+  image: url(qss:images_dark-light/splitter_horizontal_light.svg);
 }
 
 QMainWindow::separator:horizontal {
   width: 4px;
-  margin-top: 0.3px;
-  margin-bottom: 0.3px;
- /* image: url(qss:images_dark-light/splitter_horizontal_light.svg);*/
+  margin-top: 0.1px;
+  margin-bottom: 0.1px;
+ /* image: url(qss:images_dark-light/splitter_horizontal_dark.svg);*/
 }
 
 QMainWindow::separator:vertical {
   height: 4px;
-  margin-left: 0.3px;
-  margin-right: 0.3px;
- /* image: url(qss:images_dark-light/splitter_vertical_light.svg);*/
-}
-
-QMdiArea {
-  background-image: url(qss:images_dark-light/background_freecad_ExtremProDark.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/*==================================================================================================
-Sub windows
-==================================================================================================*/
-QMdiSubWindow {
-  border:1px solid #696968;
-  margin-top: 30px;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-bottom:4px;
+  margin-left: 0.1px;
+  margin-right: 0.1px;
+ /* image: url(qss:images_dark-light/splitter_vertical_dark.svg);*/
 }
 
 /* QToolTip ---------------------------------------------------------------
@@ -257,11 +264,26 @@ QCheckBox::indicator:indeterminate:disabled {
 QCheckBox::indicator:indeterminate:hover, QCheckBox::indicator:indeterminate:pressed {
   background-color: #557BB6; /* QRadioButton has the same color */
 }
+
 /* QGroupBox --------------------------------------------------------------
 
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qgroupbox
 
 --------------------------------------------------------------------------- */
+/*
+QGroupBox {
+  border: 1px solid rgb(4, 221, 0);
+  border-radius: 9px;
+  margin-top: 0.5em;
+}
+
+QGroupBox::title {
+  background-color: transparent;
+  padding-top: -24px;
+  padding-left: 8px;
+}*/
+
+
 QGroupBox {
   font-weight: bold;
   border: 1px solid #696968;
@@ -401,8 +423,8 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qmenubar
 --------------------------------------------------------------------------- */
 QMenuBar {
   background-color: #161616;
-  padding: 1px;
-  border: 0px solid rgba(0,0,0,140);
+  /*padding: 1px;
+  border: 0px solid rgba(0,0,0,140);*/
   color: White;
   selection-background-color: #557bb6;
 }
@@ -413,10 +435,10 @@ QMenuBar:focus {
 
 QMenuBar::item {
   background: transparent;
-  padding-left:5px;
+   /*padding-left:5px;
   padding-right: 5px;
   padding-bottom: 1px;
-  padding-top: 1px;
+  padding-top: 1px;*/
 }
 
 QMenuBar::item:selected {
@@ -426,14 +448,14 @@ QMenuBar::item:selected {
 }
 
 QMenuBar::item:pressed {
-  padding: 2px;
+  /*padding: 2px;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 10px;*/
   border: 0px solid #696968;
   background-color: #557bb6;
   color: White;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+ /*margin-bottom: 0px;
+  padding-bottom: 0px;*/
 }
 
 /* QMenu ------------------------------------------------------------------
@@ -2460,27 +2482,30 @@ QSplitter {
 }
 
 QSplitter::handle {
-  margin: 0px 11px;
+  margin: 0px 0px;
   padding: 0px;
 }
 
 QSplitter::handle:horizontal {
-  background-image: url(qss:images_dark-light/splitter_vertical_light.svg);
+  background-image: url(qss:images_dark-light/splitter_vertical_dark.svg);
   background-position: center center;
   background-repeat: none;
-  margin: 4px 2px 4px 2px;
-  width: 2px;
+  margin: 2px 2px 2px 2px;
+  width: 1px;
 }
 
 QSplitter::handle:vertical {
-  background-image: url(qss:images_dark-light/splitter_horizontal_light.svg);
+  background-image: url(qss:images_dark-light/splitter_horizontal_dark.svg);
   background-position: center center;
   background-repeat: none;
-  margin: 2px 4px 2px 4px;
-  height: 2px;
+  margin: 2px 2px 2px 2px;
+  height: 1px;
 }
 
 QSplitter::handle:hover {
+  background-image: url(qss:images_dark-light/splitter_horizontal_light.svg);
+  background-position: center center;
+  background-repeat: none;
   background-color: #557bb6;
 }
 
