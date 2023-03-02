@@ -1,7 +1,7 @@
 # ExtremeProDark
 Build from the ground up, complete new. Has all current bug fixes. So if you find a new one please report them!
 
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/ExtremeProDark_200x200.png)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/FreeCAD_icons.gif)
 
 ## Installation
 See https://github.com/MisterMakerNL/ExtremeProDark/blob/main/INSTALL.md
@@ -15,12 +15,9 @@ Feel free to discuss this theme and addon on https://forum.freecadweb.org/viewto
 ## Screenshots
 
 Right Click/View Image too see in 4K
-newest version
-![afbeelding](https://user-images.githubusercontent.com/29804962/193658854-f2403a99-8fc7-4620-bdf7-41b24c4fe44c.png)
-old version
-![afbeelding](https://user-images.githubusercontent.com/29804962/179059215-008b02d1-a49a-4e11-8302-06c7b4e1c3cf.png)
-
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/screenshot1.png)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/screenshot2.png)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/screenshot3.png)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/screenshot4.png)
 ## License
-
-Follow source materials:
-https://github.com/StudioPetrikas/FreeCADLink_VertUI and https://github.com/turn211/ProDarkThemePreferencePack
+Share-a-like offcourse!
