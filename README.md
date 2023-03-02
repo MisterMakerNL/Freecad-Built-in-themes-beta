@@ -1,7 +1,7 @@
 # ExtremeProDark
 Build from the ground up, complete new. Has all current bug fixes. So if you find a new one please report them!
 
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/FreeCAD_icons.gif)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/FreeCAD_icons.gif)
 
 ## Installation
 See https://github.com/MisterMakerNL/ExtremeProDark/blob/main/INSTALL.md
@@ -15,9 +15,9 @@ Feel free to discuss this theme and addon on https://forum.freecadweb.org/viewto
 ## Screenshots
 
 Right Click/View Image too see in 4K
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/screenshot1.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/screenshot2.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/screenshot3.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/screenshot4.png)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot1.png)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot2.png)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot3.png)
+![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot4.png)
 ## License
 Share-a-like offcourse!
