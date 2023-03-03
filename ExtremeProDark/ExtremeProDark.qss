@@ -97,9 +97,10 @@ QWidget::item:selected {
   background-color: #557bb6;
 }
 
-QWidget::item:hover:!selected {
-  background-color: #557bb6;
-}
+  /* Causes issue with colorselector.
+  QWidget::item:hover:!selected {
+    background-color: #557bb6;
+  }*/
 
 /* QMainWindow ------------------------------------------------------------
 
