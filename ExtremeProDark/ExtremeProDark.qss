@@ -71,8 +71,11 @@ QMdiArea {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
-
+/*navgation src/Mod/Tux/NavigationIndicatorGui.py */
+Gui--NavigationIndicatorGui--BlenderNavigationStyle {
+/*QAction#a4 {*/ 
+  qproperty-icon: url(:/icons/icons/NavigationBlender_light.svg); 
+}
 /*=====
 /* QWidget ----------------------------------------------------------------
 
@@ -927,13 +930,13 @@ QAbstractSpinBox {
   border: 1px solid #696968;
   color: White;
   /* This fixes 103, 111 */
-  padding-top: 2px;
+  padding-top: 0px;
   /* This fixes 103, 111 */
-  padding-bottom: 2px;
+  padding-bottom: 0px;
   padding-left: 4px;
   padding-right: 4px;
   border-radius: 1.9px;
-  min-height: 1.5em;
+  min-height: 1.7em;
   /* min-width: 5px; removed to fix 109 */
 }
 
@@ -994,7 +997,7 @@ QAbstractSpinBox:focus {
 
 QAbstractSpinBox:selected {
   background: #560062;
-  color: White;
+  /*color: White;*/
 }
 
 /* ------------------------------------------------------------------------ */
