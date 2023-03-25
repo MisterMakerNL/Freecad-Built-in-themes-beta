@@ -488,7 +488,7 @@ QMenu::item {
   background: transparent;
   padding: 2px 2px; /* make room for icon at left */
   /* Reserve space for selection border */
-  border: 4px transparent #696968;
+  border: 0px transparent #696968;
 }
 
 QMenu::item:selected {
@@ -500,13 +500,20 @@ QMenu::item:pressed {
   background-color: #557bb6;
 }
 
+/*QMenu::item:checked {
+  background-color: #560062;
+}*/
+
 QMenu::icon {
+  margin-left: 5px;
   width: 14px;
   height: 14px;
 }
 
 QMenu::indicator {
-  padding: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 0px;
   width: 12px;
   height: 12px;
   /* non-exclusive indicator = check box style indicator (see QActionGroup::setExclusive) */
@@ -514,7 +521,9 @@ QMenu::indicator {
 }
 
 QMenu::icon:checked { /* appearance of a 'checked' icon */
-  background: #557BB6;
+  background: #560062;
+  margin-left: -5px;
+  border: 5px solid #560062;
   position: absolute;
   border-radius: 0px;
 }
