@@ -56,6 +56,44 @@ QToolBar * {
   margin: 0px;
   padding: 0px;
 }
+
+/*hacks */
+Gui--PropertyEditor--PropertyEditor QLineEdit:read-only,
+Gui--PropertyEditor--PropertyEditor QLineEdit:disabled,
+Gui--PropertyEditor--PropertyEditor QAbstractSpinBox:read-only,
+Gui--PropertyEditor--PropertyEditor QAbstractSpinBox:disabled {
+    color: transparent;
+    border-color: transparent;
+    background-color: transparent;
+    selection-color: transparent;
+    selection-background-color: transparent;
+
+}
+Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel,
+Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel:disabled {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    border-radius: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+
+Gui--PropertyEditor--PropertyEditor QSpinBox,
+Gui--PropertyEditor--PropertyEditor QDoubleSpinBox,
+Gui--PropertyEditor--PropertyEditor QAbstractSpinBox,
+Gui--PropertyEditor--PropertyEditor QLineEdit,
+Gui--PropertyEditor--PropertyEditor QComboBox {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+
+
+
 /*==================================================================================================
 Main window
 ==================================================================================================*/
@@ -934,17 +972,18 @@ background-color: #557bb6;
 /* QAbstractSpinBox -------------------------------------------------------
 
 --------------------------------------------------------------------------- */
-QAbstractSpinBox {
+QAbstractSpinBox,
+QSpinBox {
   background-color: black;
   border: 1px solid #696968;
   color: White;
   /* This fixes 103, 111 */
-  padding-top: 1px;
+ /* padding-top: 0px;
   /* This fixes 103, 111 */
-  padding-bottom: 1px;
-  padding-left: 4px;
-  padding-right: 4px;
-  border-radius: 1.9px;
+  /*padding-bottom: 0px;
+  /*padding-left: 4px;
+  /*padding-right: 4px;
+  border-radius: 1.9px;*/
   min-height: 1.7em;
   /* min-width: 5px; removed to fix 109 */
 }
@@ -957,19 +996,20 @@ QAbstractSpinBox:up-button {
   border-bottom: 1px solid #696968;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  margin: 1px;
-  width: 12px;
-  margin-bottom: -1px;
+  /*margin: 1px;*/
+  /*width: 12px;
+  /*margin-bottom: -1px;*/
 }
 
 QAbstractSpinBox::up-arrow, QAbstractSpinBox::up-arrow:disabled, QAbstractSpinBox::up-arrow:off {
   image: url(qss:images_dark-light/up_arrow_disabled_light.svg);
-  height: 8px;
-  width: 8px;
+ /* height: 8px;
+  width: 8px;*/
 }
 
 QAbstractSpinBox::up-arrow:hover {
-  background-color: #557bb6;
+  /*background-color: #557bb6;*/
+  image: url(qss:images_dark-light/up_arrow_lighter.svg);
 }
 
 QAbstractSpinBox:down-button {
@@ -980,24 +1020,25 @@ QAbstractSpinBox:down-button {
   border-top: 1px solid #696968;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  margin: 1px;
-  width: 12px;
-  margin-top: -1px;
+  /*margin: 1px;*/
+  /*width: 12px;
+  /*margin-top: -1px;*/
 }
 
 QAbstractSpinBox::down-arrow, QAbstractSpinBox::down-arrow:disabled, QAbstractSpinBox::down-arrow:off {
   image: url(qss:images_dark-light/down_arrow_disabled_light.svg);
-  height: 8px;
-  width: 8px;
+  /*height: 8px;
+  width: 8px;*/
 }
 
 QAbstractSpinBox::down-arrow:hover {
-  background-color: #557bb6;
+  /*background-color: #557bb6;*/
+  image: url(qss:images_dark-light/down_arrow_lighter.svg);
 }
 
 QAbstractSpinBox:hover {
-  border: 1px solid #557bb6;
-  color: White;
+  /*border: 1px solid #557bb6;
+  color: White;*/
 }
 
 QAbstractSpinBox:focus {
