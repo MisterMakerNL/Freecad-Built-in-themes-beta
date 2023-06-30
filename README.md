@@ -1,11 +1,11 @@
-# ExtremeProDark
-Build from the ground up, complete new. Has all current bug fixes. So if you find a new one please report them!
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/ExtremeProDark_200x200.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/FreeCAD_icons.gif)
+# Freecad theme's BETA
+![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/resources/icons/Freecad-Built-in-themes-beta.png)
+
+Here you can get the latest theme files for Freecad.
+
 
 ## Installation
-See https://github.com/MisterMakerNL/ExtremeProDark/blob/main/INSTALL.md
-
+See [INSTALL.md](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/INSTALL.md)
 </details>
 
 ## Discussion
@@ -13,11 +13,10 @@ See https://github.com/MisterMakerNL/ExtremeProDark/blob/main/INSTALL.md
 Feel free to discuss this theme and addon on https://forum.freecadweb.org/viewtopic.php?f=34&t=68973
 
 ## Screenshots
-
-Right Click/View Image too see in 4K
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot1.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot2.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot3.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot4.png)
+![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/darker.png)
+![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/dark.png)
+![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/light.png)
+![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/dark_modern.png)
+![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/light%20modern.png)
 ## License
-Share-a-like offcourse!
+Same as the Freecad project.
