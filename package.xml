@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
- <name>ExtremeProDark</name>
- <description>RESTART FREECAD FOR CORRECT LINK COLORS</description>
- <version>2.8.1</version>
- <maintainer email="nomail@freecad.org">Mistermaker</maintainer>
- <license file="LICENSE">GPLv3</license>
- <url type="repository" branch="main">https://github.com/MisterMakerNL/ExtremeProDark</url>
- <icon>resources/icons/ExtremeProDark.svg</icon>
+<package format="1">
+  <name>Built-In Preference Packs beta</name>
+  <description>Beta versions of the preference Packs included with the FreeCAD distribution</description>
+  <version>0.1.0</version>
+  <maintainer email="email@freecad.org">MisterMaker</maintainer>
+  <license file="../../LICENSE">LGPL2</license>
+  <url type="repository">https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta</url>
 
-<content>
-  <preferencepack>
-    <name>ExtremeProDark</name>
-    <description>RESTART FREECAD FOR CORRECT LINK COLORS</description>
-    <tag>blue</tag>
-    <tag>2023</tag>
-    <tag>stylesheet</tag>
-    <tag>dark</tag>
-    <tag>Linkstage</tag>
-    <tag>overlay</tag>
-    <file>ExtremeProDark.qss</file>
-    <file>overlay/ExtremeProDarkOverlay.qss</file>
-  </preferencepack>
-</content>
+  <content>
+    <preferencepack>
+      <name>Classic theme beta</name>
+      <description>Removes stylesheets, and applies the classic purple/gray background. Resets all colors to default</description>
+      <version>1.0.0</version>
+      <tag>built-in</tag>
+      <tag>background</tag>
+      <tag>no stylesheet</tag>
+      <tag>classic theme</tag>
+      <tag>beta</tag>
+    </preferencepack>
+    <preferencepack>
+      <name>Dark theme beta</name>
+      <description>Applies a dark background and a darker stylesheet, you can choose other stylesheets as you wish.</description>
+      <version>0.5.0</version>
+      <tag>built-in</tag>
+      <tag>dark</tag>
+      <tag>background</tag>
+      <tag>stylesheet</tag>
+      <tag>theme</tag>
+      <tag>beta</tag>
+    </preferencepack>
+    <preferencepack>
+      <name>Light theme beta</name>
+      <description>Applies a light background and a light stylesheet, you can choose other stylesheets as you wish.</description>
+      <version>0.5.0</version>
+      <tag>built-in</tag>
+      <tag>light</tag>
+      <tag>background</tag>
+      <tag>stylesheet</tag>
+      <tag>theme</tag>
+      <tag>beta</tag>
+    </preferencepack>
+  </content>
 
 </package>

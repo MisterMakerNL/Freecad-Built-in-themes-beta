@@ -7,7 +7,7 @@
    width="255.26054"
    height="255.00217"
    viewBox="0 0 255.26054 255.00217"
-   sodipodi:docname="checkbox_unchecked_disabled.svg"
+   sodipodi:docname="checkbox_unchecked_dark.svg"
    inkscape:version="1.2-beta (1b65182ce9, 2022-04-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -40,7 +40,7 @@
      id="g138"
      transform="translate(35.460644,-48.814133)">
     <rect
-       style="fill:none;stroke:#808080;stroke-width:20;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:128.504"
+       style="fill:none;stroke:#000000;stroke-width:20;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:128.504"
        id="rect354"
        width="235.26054"
        height="235.00217"
