@@ -1,16 +1,15 @@
-# Freecad theme's BETA
+# FreeCAD theme's BETA
 ![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/resources/icons/Freecad-Built-in-themes-beta.png)
 
-Here you can get the latest theme files for Freecad.
+Here you can get the latest theme files for FreeCAD.
 
 
 ## Installation
 See [INSTALL.md](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/INSTALL.md)
-</details>
 
 ## Discussion
 
-Feel free to discuss this theme and addon on https://forum.freecadweb.org/viewtopic.php?f=34&t=68973
+Feel free to discuss this theme and addon on https://forum.freecad.org/viewtopic.php?t=78431
 
 ## Screenshots
 ![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/darker.png)
@@ -18,5 +17,6 @@ Feel free to discuss this theme and addon on https://forum.freecadweb.org/viewto
 ![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/light.png)
 ![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/dark_modern.png)
 ![afbeelding](https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta/blob/main/light%20modern.png)
+
 ## License
-Same as the Freecad project.
+Same as the FreeCAD project.
