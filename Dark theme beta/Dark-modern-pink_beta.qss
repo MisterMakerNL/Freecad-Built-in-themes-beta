@@ -1916,7 +1916,7 @@ QTabBar::tab:top, QDockWidget QTabBar::tab:top {
 }
 
 QTabBar::tab:top:selected, QDockWidget QTabBar::tab:top:selected {
-  background-color: #2b2b2b;
+  background-color: #696969;
   /*border: 1px solid #560062;
   border-radius: 4px;
   margin-left: 4px;
