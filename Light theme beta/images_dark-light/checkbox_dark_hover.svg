@@ -7,7 +7,7 @@
    id="svg2"
    version="1.1"
    viewBox="0 0 30 29.999999"
-   sodipodi:docname="check_dark.svg"
+   sodipodi:docname="checkbox_dark_hover.svg"
    inkscape:version="1.2-beta (1b65182ce9, 2022-04-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -26,12 +26,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="19.963981"
-     inkscape:cx="17.456438"
-     inkscape:cy="11.245252"
+     inkscape:zoom="14.116667"
+     inkscape:cx="-4.0731994"
+     inkscape:cy="16.399055"
      inkscape:window-width="1920"
      inkscape:window-height="1028"
-     inkscape:window-x="1913"
+     inkscape:window-x="2553"
      inkscape:window-y="-6"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
@@ -70,5 +70,14 @@
        style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 1081.0663,342.59799 3.9999,4 12.0001,-12"
        id="path7899" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2.99083;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:128.504"
+       id="rect354"
+       width="27.009174"
+       height="27.009172"
+       x="1075.5618"
+       y="328.09341"
+       ry="3.7735419"
+       rx="3.9316399" />
   </g>
 </svg>

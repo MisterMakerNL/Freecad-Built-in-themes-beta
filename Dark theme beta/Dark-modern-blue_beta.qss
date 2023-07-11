@@ -275,7 +275,7 @@ QCheckBox::indicator:checked:hover, QCheckBox::indicator:checked:pressed {
 
 QCheckBox::indicator:checked:disabled {
   background-color: #2b2b2b;
-  image: url(qss:images_dark-light/check_light.svg);
+  image: url(qss:images_dark-light/checkbox_checked_disabled.svg);
 }
 
 QCheckBox::indicator:indeterminate {
@@ -1698,7 +1698,7 @@ QSlider::sub-page:horizontal:disabled {
 }
 
 QSlider::handle:horizontal {
-  background: #353535;
+  background: #696968;
   border: 1px solid #696968;
   width: 10px;
   height: 8px;
@@ -1717,7 +1717,7 @@ QSlider::handle:horizontal:focus {
 }
 
 QSlider::handle:vertical {
-  background: #353535;
+  background: #696968;
   border: 1px solid #696968;
   width: 10px;
   height: 8px;

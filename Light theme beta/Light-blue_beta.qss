@@ -11,21 +11,21 @@ https://forum.freecad.org/viewtopic.php?t=78431
 INSTALLATION WHEN NECESSARY
 ============================================================================================================
 1) Place the .qss files and /images/ folder in the path that fits your OS:
-  OSX = /Users/[YOUR_USER_NAME]/Library/Preferences/FreeCAD/Gui/Stylesheets/
-  WINDOWS = C:/[INSTALLATION_PATH]/FreeCAD/data/Gui/Stylesheets/
-  LINUX = /home/[YOUR_USER_NAME]/.FreeCAD/Gui/Stylesheets/
+    OSX = /Users/[YOUR_USER_NAME]/Library/Preferences/FreeCAD/Gui/Stylesheets/
+    WINDOWS = C:/[INSTALLATION_PATH]/FreeCAD/data/Gui/Stylesheets/
+    LINUX = /home/[YOUR_USER_NAME]/.FreeCAD/Gui/Stylesheets/
 
 ============================================================================================================
 TO MODIFY USE THESE COLORS:
-#8cb0ff
-#b0c9ff
+ #f892ff
+ #ffbff3
 
 
 See Qt documentation:
 
-- https://doc.qt.io/qt-5/stylesheet.html
-- https://doc.qt.io/qt-5/stylesheet-reference.html
-- https://doc.qt.io/qt-5/stylesheet-examples.html
+  - https://doc.qt.io/qt-5/stylesheet.html
+  - https://doc.qt.io/qt-5/stylesheet-reference.html
+  - https://doc.qt.io/qt-5/stylesheet-examples.html
 
 --------------------------------------------------------------------------- */
 
@@ -277,7 +277,7 @@ QCheckBox::indicator:checked:hover, QCheckBox::indicator:checked:pressed {
 
 QCheckBox::indicator:checked:disabled {
   background-color: #F6F6F6;
-  image: url(qss:images_dark-light/check_dark.svg);
+  image: url(qss:images_dark-light/checkbox_checked_disabled.svg);
 }
 
 QCheckBox::indicator:indeterminate {
