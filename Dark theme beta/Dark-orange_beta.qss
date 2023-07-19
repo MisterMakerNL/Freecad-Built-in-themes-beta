@@ -84,6 +84,17 @@ Gui--PropertyEditor--PropertyEditor QComboBox {
 
 }
 
+/* fix for column items background when a link is present */
+Gui--PropertyEditor--PropertyEditor > QWidget > QFrame:focus {
+  background-color: #b28416; /* same as focused background color */
+}
+
+/* hack to hide weird redundant information inside cells with links and no editable data (but editable via "..." button) */
+Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
+	color: #ffffff;
+	background-color: #ACC8E5; /* same as focused background color */
+}
+
 /*==================================================================================================
 Main window
 ==================================================================================================*/
@@ -2531,4 +2542,10 @@ QAbstractView:selected {
 PlotWidget {
   /* Fix cut labels in plots #134 */
   padding: 0px;
+}
+
+/*url in qsint*/
+Gui--UrlLabel {
+  color : #d50000; /* By default: rgba(0,91,255,255); Deep sky blue */
+  text-decoration : underline;
 }
