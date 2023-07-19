@@ -2565,14 +2565,14 @@ Gui--StatefulLabel[state="redundant_constraints"] {
   color : #b65200; /* Orange red */
 }
 Gui--StatefulLabel[state="partially_redundant_constraints"] {
-  color : #b5b500; /* Royal blue */
+  color : #ebeb00; /* Royal blue */
 }
 Gui--StatefulLabel[state="solver_failed"] {
   color : #960000; /* Red */
   font-weight: bold;
 }
 Gui--StatefulLabel[state="fully_constrained"] {
-  color : #109e00; /* Green */
+  color : #16de00; /* Green */
 }
 Gui--UrlLabel {
   color : #960000; /* By default: rgba(0,91,255,255); Deep sky blue */
