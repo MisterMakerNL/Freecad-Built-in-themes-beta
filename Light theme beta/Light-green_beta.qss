@@ -2552,8 +2552,37 @@ PlotWidget {
   padding: 0px;
 }
 
-/*url in qsint*/
+/*==================================================================================================
+SKETCHER
+==================================================================================================*/
+
+Gui--StatefulLabel[state="empty_sketch"] {
+  color : #797979; /* 50% opacity white */
+}
+Gui--StatefulLabel[state="under_constrained"] {
+  color : #A0A0A0; /* White */
+}
+Gui--StatefulLabel[state="conflicting_constraints"] {
+  color : #960000; /* Red */
+}
+Gui--StatefulLabel[state="malformed_constraints"] {
+  color : #960000; /* Red */
+}
+Gui--StatefulLabel[state="redundant_constraints"] {
+  color : #b65200; /* Orange red */
+}
+Gui--StatefulLabel[state="partially_redundant_constraints"] {
+  color : #6c6c00; /* Royal blue */
+}
+Gui--StatefulLabel[state="solver_failed"] {
+  color : #960000; /* Red */
+  font-weight: bold;
+}
+Gui--StatefulLabel[state="fully_constrained"] {
+  color : #109e00; /* Green */
+}
 Gui--UrlLabel {
-  color : #d50000; /* By default: rgba(0,91,255,255); Deep sky blue */
+  color : #960000; /* By default: rgba(0,91,255,255); Deep sky blue */
+  font-weight: bold;
   text-decoration : underline;
 }
