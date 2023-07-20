@@ -2466,7 +2466,7 @@ QSplitter::handle {
 }
 
 QSplitter::handle:horizontal {
-  background-image: url(qss:images_dark-light/splitter_vertical_light.svg);
+  background-image: url(qss:images_dark-light/splitter_vertical_dark.svg);
   background-position: center center;
   background-repeat: none;
   margin: 2px 2px 2px 2px;
@@ -2474,7 +2474,7 @@ QSplitter::handle:horizontal {
 }
 
 QSplitter::handle:vertical {
-  background-image: url(qss:images_dark-light/splitter_horizontal_light.svg);
+  background-image: url(qss:images_dark-light/splitter_horizontal_dark.svg);
   background-position: center center;
   background-repeat: none;
   margin: 2px 2px 2px 2px;
