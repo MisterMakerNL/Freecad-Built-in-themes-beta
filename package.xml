@@ -12,7 +12,7 @@
     <preferencepack>
       <name>Classic theme beta</name>
       <description>Removes stylesheets, and applies the classic purple/gray background. Resets all colors to default</description>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <tag>built-in</tag>
       <tag>background</tag>
       <tag>no stylesheet</tag>
