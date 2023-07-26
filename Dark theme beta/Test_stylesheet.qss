@@ -1792,6 +1792,8 @@ Resetting everything helps to unify styles across different operating systems
   }
 
   QTabWidget::pane {
+    background-color: transparent; /* temporal (transparent background) */ /* tab content background color */
+    position: absolute;
     margin: 0px;
     /* Fixes double border inside pane with pyqt5 */
     padding: 0px;
@@ -1833,6 +1835,7 @@ Resetting everything helps to unify styles across different operating systems
   --------------------------------------------------------------------------- */
   QTabBar, QDockWidget QTabBar {
     qproperty-drawBase: 0;
+    background-color: transparent;
     /* left: 5px; move to the right by 5px - removed for fix */
   }
 
