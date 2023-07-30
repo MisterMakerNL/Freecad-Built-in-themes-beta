@@ -2478,6 +2478,12 @@ https://stackoverflow.com/questions/14581498/qt-stylesheet-for-hline-vline-color
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qsplitter
 
 --------------------------------------------------------------------------- */
+QSplitter {
+  background-color: #f6f6f6;
+  spacing: 1px;
+  padding: 1px;
+  margin: 1px;
+}
 
 QSplitter::handle {
   margin: 0px 0px;

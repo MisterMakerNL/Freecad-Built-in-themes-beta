@@ -2468,30 +2468,43 @@ Resetting everything helps to unify styles across different operating systems
 
   /* QSplitter --------------------------------------------------------------
 
-https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qsplitter
+  https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qsplitter
 
---------------------------------------------------------------------------- */
+  --------------------------------------------------------------------------- */
+  QSplitter {
+    background-color: #3c3c3c;
+    spacing: 1px;
+    padding: 1px;
+    margin: 1px;
+  }
 
-QSplitter::handle {
-  margin: 0px 0px;
-  padding: 0px;
-}
+  QSplitter::handle {
+    margin: 0px 0px;
+    padding: 0px;
+  }
 
-QSplitter::handle:horizontal {
-  background-image: url(qss:images_dark-light/splitter_vertical_dark.svg);
-  background-position: center center;
-  background-repeat: none;
-  margin: 2px 2px 2px 2px;
-  width: 1px;
-}
+  QSplitter::handle:horizontal {
+    background-image: url(qss:images_dark-light/splitter_vertical_dark.svg);
+    background-position: center center;
+    background-repeat: none;
+    margin: 2px 2px 2px 2px;
+    width: 1px;
+  }
 
-QSplitter::handle:vertical {
-  background-image: url(qss:images_dark-light/splitter_horizontal_dark.svg);
-  background-position: center center;
-  background-repeat: none;
-  margin: 2px 2px 2px 2px;
-  height: 1px;
-}
+  QSplitter::handle:vertical {
+    background-image: url(qss:images_dark-light/splitter_horizontal_dark.svg);
+    background-position: center center;
+    background-repeat: none;
+    margin: 2px 2px 2px 2px;
+    height: 1px;
+  }
+
+  QSplitter::handle:hover {
+    background-image: url(qss:images_dark-light/splitter_horizontal_light.svg);
+    background-position: center center;
+    background-repeat: none;
+    background-color: #2053c0;
+  }
 
   /* QDateEdit, QDateTimeEdit -----------------------------------------------
 
