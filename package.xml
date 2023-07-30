@@ -18,6 +18,7 @@
       <tag>no stylesheet</tag>
       <tag>classic theme</tag>
       <tag>beta</tag>
+      <tag>Theme</tag>
     </preferencepack>
     <preferencepack>
       <name>Dark theme beta</name>
@@ -27,7 +28,7 @@
       <tag>dark</tag>
       <tag>background</tag>
       <tag>stylesheet</tag>
-      <tag>theme</tag>
+      <tag>Theme</tag>
       <tag>beta</tag>
     </preferencepack>
     <preferencepack>
@@ -38,7 +39,7 @@
       <tag>light</tag>
       <tag>background</tag>
       <tag>stylesheet</tag>
-      <tag>theme</tag>
+      <tag>Theme</tag>
       <tag>beta</tag>
     </preferencepack>
   </content>
