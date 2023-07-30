@@ -2513,12 +2513,9 @@ https://stackoverflow.com/questions/14581498/qt-stylesheet-for-hline-vline-color
 
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qsplitter
 
---------------------------------------------------------------------------- */
-QSplitter {
-  background-color: #f6f6f6;
-  spacing: 1px;
-  padding: 1px;
-  margin: 1px;
+---------------------------------------------------------------------------*/
+QSplitterHandle:hover { /* to fix bug about hovering on splitters https://bugreports.qt.io/browse/QTBUG-13768 */
+
 }
 
 QSplitter::handle {
@@ -2527,7 +2524,7 @@ QSplitter::handle {
 }
 
 QSplitter::handle:horizontal {
-  background-image: url(qss:images_dark-light/splitter_vertical_dark.svg);
+  background-image: none;
   background-position: center center;
   background-repeat: none;
   margin: 2px 2px 2px 2px;
@@ -2535,18 +2532,24 @@ QSplitter::handle:horizontal {
 }
 
 QSplitter::handle:vertical {
-  background-image: url(qss:images_dark-light/splitter_horizontal_dark.svg);
+  background-image: none;
   background-position: center center;
   background-repeat: none;
   margin: 2px 2px 2px 2px;
   height: 1px;
 }
+QSplitter::handle:vertical:hover {
+  background-image: url(qss:images_dark-light/splitter_horizontal_dark.svg);
+  background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0.2 transparent,stop:0.5 #e98ad8, stop:0.8 transparent);
+  background-position: center center;
+  background-repeat: none;
+  }
 
-QSplitter::handle:hover {
+QSplitter::handle:vertical:hover {
   background-image: url(qss:images_dark-light/splitter_horizontal_dark.svg);
   background-position: center center;
   background-repeat: none;
-  background-color: #e98ad8;
+  background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0,stop:0.2 transparent,stop:0.5 #e98ad8, stop:0.8 transparent);
 }
 
 /* QDateEdit, QDateTimeEdit -----------------------------------------------
