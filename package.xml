@@ -2,7 +2,7 @@
 <package format="1">
   <name>Built-In Preference Packs beta</name>
   <description>Beta versions of the preference Packs included with the FreeCAD distribution</description>
-  <version>1.2.1</version>
+  <version>1.2.2</version>
   <maintainer email="email@freecad.org">MisterMaker</maintainer>
   <license file="../../LICENSE">LGPL2</license>
   <url type="repository" branch="main">https://github.com/MisterMakerNL/Freecad-Built-in-themes-beta</url>
@@ -32,7 +32,7 @@
       <tag>beta</tag>
     </preferencepack>
     <preferencepack>
-    <name>Darker theme beta</name>
+      <name>Darker theme beta</name>
       <description>Applies a dark background and a darker stylesheet, you can choose other stylesheets as you wish.</description>
       <version>0.6.7</version>
       <tag>built-in</tag>
