@@ -12,7 +12,7 @@
     <preferencepack>
       <name>Classic theme beta</name>
       <description>Removes stylesheets, and applies the classic purple/gray background. Resets all colors to default</description>
-      <version>1.1.0</version>
+      <version>1.5.0</version>
       <tag>built-in</tag>
       <tag>background</tag>
       <tag>no stylesheet</tag>
@@ -22,7 +22,28 @@
     </preferencepack>
     <preferencepack>
       <name>Dark theme beta</name>
+      <description>Applies a dark background and a dark stylesheet, you can choose other stylesheets as you wish.</description>
+      <version>0.6.7</version>
+      <tag>built-in</tag>
+      <tag>dark</tag>
+      <tag>background</tag>
+      <tag>stylesheet</tag>
+      <tag>Theme</tag>
+      <tag>beta</tag>
+    </preferencepack>
+    <name>Darker theme beta</name>
       <description>Applies a dark background and a darker stylesheet, you can choose other stylesheets as you wish.</description>
+      <version>0.6.7</version>
+      <tag>built-in</tag>
+      <tag>dark</tag>
+      <tag>background</tag>
+      <tag>stylesheet</tag>
+      <tag>Theme</tag>
+      <tag>beta</tag>
+    </preferencepack>
+    <preferencepack>
+      <name>Dark modern theme beta</name>
+      <description>Applies a dark background and a darker more modern stylesheet, you can choose other stylesheets as you wish.</description>
       <version>0.6.7</version>
       <tag>built-in</tag>
       <tag>dark</tag>
@@ -34,6 +55,16 @@
     <preferencepack>
       <name>Light theme beta</name>
       <description>Applies a light background and a light stylesheet, you can choose other stylesheets as you wish.</description>
+      <version>0.6.7</version>
+      <tag>built-in</tag>
+      <tag>light</tag>
+      <tag>background</tag>
+      <tag>stylesheet</tag>
+      <tag>Theme</tag>
+      <tag>beta</tag>
+    </preferencepack>
+      <name>Light modern theme beta</name>
+      <description>Applies a light background and a light more modern stylesheet, you can choose other stylesheets as you wish.</description>
       <version>0.6.7</version>
       <tag>built-in</tag>
       <tag>light</tag>
