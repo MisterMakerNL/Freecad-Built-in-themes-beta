@@ -17,8 +17,8 @@ INSTALLATION WHEN NECESSARY
 
 ============================================================================================================
 TO MODIFY USE THESE COLORS:
- #f892ff
- #ffbff3
+ #8cb0ff
+ #b0c9ff
 
 
 See Qt documentation:
@@ -457,7 +457,7 @@ QMenuBar:focus {
 
 QMenuBar::item {
   background: transparent;
-    /*padding-left:5px;
+   /*padding-left:5px;
   padding-right: 5px;
   padding-bottom: 1px;
   padding-top: 1px;*/
@@ -1179,7 +1179,7 @@ QPushButton:checked:selected {
 
 QPushButton:hover {
   background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #8cb0ff, stop:1 #b0c9ff);
-  color: black;
+  color: white;
 }
 
 QPushButton:pressed {
@@ -1313,12 +1313,12 @@ QToolButton::menu-button {
 }
 
 QToolButton::menu-button:hover {
-  /* background: rgba(0, 0, 0, 0.5);*/
+ /* background: rgba(0, 0, 0, 0.5);*/
 
 }
 
 QToolButton::menu-button:checked:hover {
-  /* background: rgba(0, 0, 0, 0.5);*/
+ /* background: rgba(0, 0, 0, 0.5);*/
 }
 
 QToolButton::menu-indicator {
@@ -1382,6 +1382,7 @@ QComboBox {
   /* changed to 4px to fix #239 */
   /* Fixes #103, #111 */
   min-height: 1.5em;
+  margin: 0px -1px 0px 0px; /* hack for Mac... try it on Windows and Linux */
   /* padding-top: 2px;     removed to fix #132 */
   /* padding-bottom: 2px;  removed to fix #132 */
   /* min-width: 75px;      removed to fix #109 */
@@ -1411,6 +1412,10 @@ QComboBox QAbstractItemView:alternate {
   background: #f6f6f6;
 }
 
+QComboBox:checked {
+  color: black;
+}
+
 QComboBox:disabled {
   background-color: #F6F6F6;
   color: #BABABA;
@@ -1430,17 +1435,14 @@ QComboBox:on {
 }
 
 QComboBox::indicator {
-  border: none;
-  border-radius: 0px;
+  padding-left: 8px;
   background-color: transparent;
-  selection-background-color: transparent;
-  color: transparent;
-  selection-color: #8cb0ff;
-  /* Needed to remove indicator - fix #132 */
 }
 
-QComboBox::indicator:alternate {
-  background: #f6f6f6;
+QComboBox::indicator:checked {
+  width: 12px;
+  height: 12px;
+  image:url(qss:images_dark-light/check_dark.svg);
 }
 
 QComboBox::item {
@@ -1454,9 +1456,17 @@ QComboBox::item {
         }
         */
 }
+/* Background color of popup-list.*/
 
+/* Needed to complete the rule set. */
 QComboBox::item:alternate {
   background: #f6f6f6;
+}
+
+/* Color of the selected list item. */
+QComboBox::item:selected {
+  border: 1px solid #8cb0ff;
+  background: #8cb0ff
 }
 
 QComboBox::drop-down {
@@ -1795,6 +1805,7 @@ QTabWidget::pane {
   margin: 0px;
   /* Fixes double border inside pane with pyqt5 */
   padding: 0px;
+  background-color: #f6f6f6;
 }
 
 QTabWidget::pane:selected {
@@ -2613,4 +2624,29 @@ Gui--StatefulLabel[state="fully_constrained"] {
 Gui--UrlLabel {
   color : rgba(0,91,255,255); /* Deep sky blue */
   text-decoration : underline;
+}
+
+Gui--NotificationLabel {
+  background-color: #f6f6f6;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+/*==================================================================================================
+Forming windows below are the border settings. See also https://forum.freecad.org/viewtopic.php?p=439797#p439797
+==================================================================================================*/
+QMdiSubWindow {
+  border:2px solid #ffffff;
+  border-radius: 2px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  background-color: #f6f6f6;
+}
+
+QMdiSubWindow:hover {
+  border:2px solid #cccccc;
+}
+
+QMdiSubWindow:active {
+  border:2px solid #8cb0ff;
 }
